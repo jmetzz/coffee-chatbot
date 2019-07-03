@@ -1,0 +1,24 @@
+{
+  "request": {
+    "method": "GET",
+    "url": "/api/v1/customers/default"
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "applicationCode": "APP-code",
+      "contentText": "context content text",
+      "customerNumber": "1",
+      "customerName": "John Doe",
+      "customerPhoneNumber": "+32 999 55 55 55",
+      "emailAddress": "john@doe.com",
+      "languageCode": "en",
+      "customerFirstName": "John",
+      "customerFamilyName": "Doe",
+      "customerNickname": "J"
+    },
+    "headers": {
+      "Content-Type": "application/json"
+    }
+  }
+}

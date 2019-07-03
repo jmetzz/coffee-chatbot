@@ -1,0 +1,41 @@
+version: '3.0'
+
+services:
+  rasa:
+    image: rasa/rasa:latest-full
+    networks: ['coffee-bot-network']
+    ports:
+    - "5005:5005"
+    volumes:
+    - "./models:/app/models"
+    - "./config:/app/config"
+    - "./logs:/app/logs"
+    - "./data:/app/data"
+    restart: on-failure
+    command: [ "run", "--debug", "-p", "5005", "--credentials", "./config/credentials.yml", "--endpoints", "./config/endpoints.yml"]
+
+  action_server:
+    image: rasa/rasa-sdk
+    networks: ['coffee-bot-network']
+    ports:
+    - "5055:5055"
+    volumes:
+    - "./actions:/app/actions"
+
+  duckling:
+    image: rasa/duckling
+    networks: ['coffee-bot-network']
+    ports:
+    - "8000:8000"
+  
+  mongodb:
+    image: mongo:4.0.2
+    command: "mongod  --auth"
+    ports:
+      - "27017:27017"
+    environment:
+      - MONGOID_ENV=test
+    volumes:
+      - ./mongo:/data/db
+
+networks: {coffee-bot-network: {}}

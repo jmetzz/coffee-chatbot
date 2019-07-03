@@ -1,0 +1,67 @@
+## New Story
+
+* greet
+    - utter_greet
+* ask_builder
+    - utter_ask_builder
+* ask_how_built
+    - utter_ask_how_built
+* ask_how_doing
+    - utter_ask_how_doing
+* ask_how_old
+    - utter_ask_how_old
+* ask_is_bot
+    - utter_ask_is_bot
+* ask_restaurant
+    - utter_ask_restaurant
+* ask_time
+    - utter_ask_time
+* ask_weather
+    - utter_ask_weather
+* ask_what_is_my_name
+    - utter_ask_what_is_my_name
+* ask_what_is
+    - utter_ask_what_is
+* ask_what_is_possible
+    - utter_ask_what_is_possible
+* ask_where_from
+    - utter_ask_where_from
+* ask_who_am_i
+    - utter_ask_who_am_i
+* ask_who_is_it
+    - utter_ask_who_is_it
+* canthelp
+    - utter_canthelp
+* deny
+    - utter_no_worries
+* greet
+    - utter_greet
+* human_handoff
+    - utter_contact_email
+* out_of_scope
+    - utter_out_of_scope
+* thank
+    - utter_no_worries
+
+## chitchat about 
+
+* greet
+    - utter_greet
+* ask_for_the_blog
+    - utter_ask_for_the_blog
+* thank
+    - utter_no_worries
+* compliment
+    - utter_compliment
+* ask_for_social_network
+    - utter_ask_for_social_network
+* compliment
+    - utter_compliment
+* ask_ml
+    - utter_ask_ml
+* ask_mobile
+    - utter_ask_mobile
+* affirm
+    - utter_thumbsup
+* bye
+    - utter_bye

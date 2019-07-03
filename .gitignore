@@ -102,3 +102,21 @@ venv.bak/
 
 # mypy
 .mypy_cache/
+
+
+.vscode/
+.idea/
+.sonarlint/
+.scannerwork/
+input_data/
+models/
+.DS_Store
+*.iml
+*.log
+training_status.yml
+*.pyc
+__pycache__/
+
+.env
+.coverage
+target/

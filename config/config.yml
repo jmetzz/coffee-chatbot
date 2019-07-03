@@ -1,0 +1,54 @@
+# ------- ------- ------- ------- ------- -------
+# Configuration for Rasa NLU.
+# https://rasa.com/docs/rasa/nlu/components/
+# ------- ------- ------- ------- ------- -------
+language: en
+pipeline:
+- name: WhitespaceTokenizer
+#- name: CRFEntityExtractor
+- name: CountVectorsFeaturizer
+  OOV_token: oov
+  token_pattern: (?u)\b\w+\b
+- name: EmbeddingIntentClassifier
+  epochs: 50
+- name: DucklingHTTPExtractor
+  url: http://142.93.108.43:8000
+  dimensions:
+  - email
+  - number
+  - amount-of-money
+- name: EntitySynonymMapper
+
+
+
+# ------- ------- ------- ------- ------- -------
+# Configuration for Rasa Core.
+# https://rasa.com/docs/rasa/core/policies/
+# ------- ------- ------- ------- ------- -------
+policies:
+  - name: MemoizationPolicy
+    max_history: 4
+  - name: KerasPolicy
+    featurizer:
+    - name: MaxHistoryTrackerFeaturizer
+      max_history: 4
+      state_featurizer:
+        - name: BinarySingleStateFeaturizer
+    rnn_size: 42
+    epochs: 50
+  - name: "FallbackPolicy"
+    nlu_threshold: 0.75
+    core_threshold: 0.3
+    fallback_action_name: "utter_default"
+  - name: MappingPolicy
+  - name: FormPolicy
+
+# Should be able to pass extra parameters, such as:
+#train_parameters:
+#  augmentation_factor: 0
+#  use_story_concatenation: True
+#  unique_last_num_states:
+#  remove_duplicates: True
+#  debug_plots: False
+#  tracker_limit:
+#  exclusion_percentage:

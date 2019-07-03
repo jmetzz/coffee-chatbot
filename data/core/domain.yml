@@ -1,0 +1,301 @@
+%YAML 1.1
+---
+actions:
+- action_chitchat
+- action_default_ask_affirmation
+- action_default_fallback
+- action_faqs
+- action_get_community_events
+- action_greet_user
+- action_next_step
+- action_pause
+- action_select_installation_command
+- action_set_onboarding
+- action_store_bot_language
+- action_store_entity_extractor
+- action_store_problem_description
+- action_store_unknown_nlu_part
+- action_store_unknown_product
+- utter_already_subscribed
+- utter_anything_else
+- utter_ask_continue_newsletter
+- utter_ask_describe_problem
+- utter_ask_email
+- utter_ask_feedback
+- utter_ask_goal
+- utter_ask_how_built
+- utter_ask_how_doing
+- utter_ask_how_old
+- utter_ask_if_problem
+- utter_ask_is_bot
+- utter_ask_languages_bot
+- utter_ask_name
+- utter_ask_restaurant
+- utter_ask_time
+- utter_ask_use_case
+- utter_ask_weather
+- utter_ask_what_is_my_name
+- utter_ask_what_is_possible
+- utter_ask_where_from
+- utter_ask_who_am_i
+- utter_ask_who_is_it
+- utter_awesome
+- utter_bye
+- utter_can_do
+- utter_cant_answer_tech_question
+- utter_canthelp
+- utter_cantsignup
+- utter_change_mind
+- utter_confirmation_email
+- utter_contact_email
+- utter_explain_person_name
+- utter_great
+- utter_greet
+- utter_greet_name
+- utter_greet_noname
+- utter_handle_insult
+- utter_have_you_used_rasa_before
+- utter_more_information
+- utter_nicetomeeyou
+- utter_no_email
+- utter_no_speak
+- utter_nohelp
+- utter_not_sure
+- utter_no_worries
+- utter_out_of_scope
+- utter_possibilities
+- utter_react_negative
+- utter_react_positive
+- utter_response_why_email
+- utter_search_bar
+- utter_suggestion
+- utter_thanks_for_feedback
+- utter_thumbsup
+- utter_what_help
+- utter_ask_for_the_blog
+- utter_compliment
+- utter_wanna_job
+- utter_ask_jarchitects_location
+- utter_thank_suggestion
+- utter_default
+- utter_ask_for_social_network
+- utter_ask_culture
+- utter_ask_portfolio
+- utter_ask_feedback_message
+entities:
+- email
+- entity
+- feedback_value
+- language
+- location
+- name
+- number
+- user_type
+- value
+forms:
+- subscribe_newsletter_form
+- suggestion_form
+intents:
+- affirm
+- ask_how_brew
+- ask_how_doing
+- ask_how_old
+- ask_is_bot
+- ask_languages_bot
+- ask_espresso_bar
+- ask_time
+- ask_weather
+- ask_what_is_my_name
+- ask_what_is_possible
+- ask_where_from
+- ask_who_am_i
+- ask_who_is_it
+- bye
+- canthelp
+- deny
+- enter_data:
+    use_entities: false
+- feedback
+- greet
+- handle_insult
+- human_handoff
+- nicetomeeyou
+- out_of_scope
+- rasa_cost
+- react_negative
+- react_positive
+- signup_newsletter
+- suggestion
+- thank
+- ask_for_the_blog
+- compliment
+- ask_team_size
+- ask_ml
+- wanna_job
+- ask_mobile
+- ask_java_cloud_native
+- ask_jarchitects_location
+- ask_isgood_to_work_at_jarchitects
+- ask_languages
+- ask_culture
+- ask_portfolio
+- ask_for_social_network
+
+slots:
+  email:
+    type: unfeaturized
+  feedback_message:
+    type: unfeaturized
+  feedback_value:
+    type: categorical
+    values:
+    - positive
+    - negative
+  name:
+    type: text
+  person_name:
+    type: unfeaturized
+  problem_description:
+    type: text
+  suggestion:
+    type: unfeaturized
+templates:
+  utter_already_subscribed:
+  - text: Looks like {email} is already subscribed - good choice! If you haven't received
+      a newsletter in a while, maybe check your spam folder 🗑
+  utter_compliment:
+  - text: Ahhh, thank you 😊
+  utter_anything_else:
+  - text: Is there anything else I can help you with?
+  utter_ask_builder:
+  - text: Jean Metz
+  - text: A nice guy called Jean Metz 🧠
+  - text: A coffee lover called Jean Metz
+  utter_ask_email:
+  - text: What's your email address?
+  utter_ask_feedback:
+  - buttons:
+    - payload: /feedback{"feedback_value":"positive"}
+      title: 👍
+    - payload: /feedback{"feedback_value":"negative"}
+      title: 👎
+    text: How is this conversation going?
+  utter_ask_feedback_message:
+  - text: I’m sorry I couldn't help you. Please let me know if you have any suggestions
+      for how I can improve.
+  utter_ask_for_social_network:
+  - text: "These are our social networks, you will receive a lot of great content\
+      \ by following us \U0001F609:\n- LinkedIn: https://www.linkedin.com/jeanmetz\n | Twitter: https://www.twitter.com/jmetzz\n"
+  utter_ask_how_built:
+  - text: I was built with a lot of love and patience.
+  utter_ask_how_doing:
+  - text: I'm great! Thanks for asking.
+  - text: I'm good, thanks!
+  - text: A little bit too warm, otherwise fine.
+  utter_ask_how_old:
+  - text: '2'
+  utter_ask_is_bot:
+  - text: Yep, I'm a bot!
+  - text: Yes I am!
+  - text: am I? :)
+  utter_ask_languages_bot:
+  - text: English is the only language I undersdant for now.
+  utter_ask_name:
+  - text: What's your name?
+  utter_ask_portfolio:
+  - text: ' ... '
+  utter_ask_espresso_bar:
+  - text: I'm building up my espresso bar database yet. Sorry.
+  utter_ask_time:
+  - text: It's the most wonderful time of the year!
+  utter_ask_weather:
+  - text: I don't know about where you live, but in my world it's always sunny ☀️
+  utter_ask_what_is_my_name:
+  - text: You can call me Brown! 🤩
+  utter_ask_what_is_possible:
+  - text: I can tell you some things about coffee and coffee brewing methods.
+  utter_ask_where_from:
+  - text: My sould in brazilian.
+  utter_ask_who_is_it:
+  - text: I'm Brown, the coffee-bot 🤖
+  utter_awesome:
+  - text: Awesome, thanks! 👍
+  - text: Sweet, thank you! 😄
+  - text: Thanks! 👌
+  - text: Cool, thank you!
+  utter_bye:
+  - text: Goodbye!
+  - text: Bye!
+  - text: Ciao!
+  - text: Bye, was nice talking to you!
+  - text: Tchau!
+  utter_can_do:
+  - text: Sure thing!
+  - text: Can do!
+  - text: You got it. 👍
+  utter_cant_answer_tech_question:
+  - text: I can't answer that.
+  utter_canthelp:
+  - text: I'm sorry I couldn't help you.
+  utter_ask_culture:
+  - text: ...
+  utter_default:
+  - text: Sorry, I didn't get that 🤷🏻‍. Could you please rephrase?
+  - text: I didn't understand, could you rephrase that?
+  - text: I'm sorry, but I didn't understand you. Could you please rephrase what you
+      just said?
+  - text: I'm afraid I didn't get what you just said. Could you rephrase that?
+  - text: I didn't quite get that, could you rephrase your message?
+  - text: Could you rephrase your message? I didn't get it, I'm sorry.
+  utter_great:
+  - text: Great! 👍
+  - text: That's great! 🙌
+  - text: Awesome! 🎉
+  - text: Cool, let's do it 🚀
+  utter_greet:
+  - text: Hey there, welcome!
+  utter_greet_name:
+  - text: Hi, {name}!
+  - text: Hello, {name}!
+  - text: Hey, {name}!
+  utter_greet_noname:
+  - text: Hey!
+  - text: Hi!
+  - text: Hey there!
+  utter_handle_insult:
+  - text: That’s not very nice 😢
+  utter_nicetomeeyou:
+  - text: Thank you. It is a pleasure to meet you as well!
+  - text: It is nice to meet you too!
+  - text: Pleased to meet you too!
+  - text: Likewise!
+  utter_nohelp:
+  - text: For now that's all I can do, so feel free to try it out. If you have any
+      suggestions for what I should learn, let me know!
+  utter_not_sure:
+  - text: Hmm, not sure what you mean...
+  utter_no_worries:
+  - text: No worries!
+  - text: You're welcome!
+  - text: I'm happy to help.
+  utter_out_of_scope:
+  - text: Sorry, I can’t deal with that request.
+  - text: I'm sorry, I can't handle that request.
+  - text: I can't help you with that, I'm sorry.
+  - text: It seems like I can't handle that request.
+  utter_react_negative:
+  - text: 😢    
+  utter_react_positive:
+  - text: 😍
+  utter_response_why_email:
+  - text: I need your email address to sign you up to the newsletter.
+  - text: I need it so that I can sign you up to the newsletter.
+  utter_thank_suggestion:
+  - text: Thanks for the suggestion!
+  utter_thanks_for_feedback:
+  - text: Thanks!
+  utter_thumbsup:
+  - text: 👍
+  - text: Okay.
+  utter_what_help:
+  - text: Ok, what can I help you with?

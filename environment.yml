@@ -1,0 +1,10 @@
+name: coffe-bot
+dependencies:
+  - python=3.7
+  - pip
+  - python-dotenv
+  - ruamel_yaml
+  - incremental
+  - fuzzywuzzy
+  - pip:
+    - rasa_core_sdk
