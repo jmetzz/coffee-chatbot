@@ -67,7 +67,7 @@ remaining_arguments=( "$@" )
 
 # Set the environment variables needed to run
 if [[ -f ".env" ]]; then
-    source .env
+    source ../.env
 else
     error 3 "\t.env file not found. Create the file and define the necessary variables (see endpoint.py)"
 fi

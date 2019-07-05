@@ -24,7 +24,7 @@ class StoriesAugmentation:
             random.seed(seed)
 
     def augment(self):
-        src.main.python.utils.delete_file(self.output_file)
+        utils.delete_file(self.output_file)
         stories = self.load_stories()
         with open(self.output_file, "w") as outfile:
             for name, options in self.config.items():
@@ -114,7 +114,3 @@ class StoriesAugmentation:
             cls.logger.error(f"When 'amount' is specified, it must be int or float. Given {type(amount)}")
             raise ValueError("Amount is not int or float")
 
-
-if __name__ == "__main__":
-    sa = StoriesAugmentation("stories", "rules.yml", "test11.md", 31)
-    sa.augment()
