@@ -1,0 +1,33 @@
+// INTENTS
+%[greeting](train:80, test:40)
+    hallo
+    hello
+    hoi
+    ahoi
+    yoo
+    yo
+    hey
+    hey hey
+    heykes
+    ahola
+    aloha
+    hello
+    hi
+    {good} {morning/afternoon/evening/night}
+
+
+%[goodbye](train:80, test:40)
+    ciao
+    cya
+    see ya
+    see you
+    adieu
+    bye
+    bye bye
+    adios
+
+~[chatbot]
+    chatbot
+    bot
+    robot
+    computer

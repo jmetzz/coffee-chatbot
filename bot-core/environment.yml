@@ -1,4 +1,6 @@
-name: coffe-bot
+channels:
+  - conda-forge
+name: coffee-bot
 dependencies:
   - python=3.7
   - pip
@@ -6,5 +8,7 @@ dependencies:
   - ruamel_yaml
   - incremental
   - fuzzywuzzy
+  - numpy
   - pip:
     - rasa_core_sdk
+    - chatette==1.4.2

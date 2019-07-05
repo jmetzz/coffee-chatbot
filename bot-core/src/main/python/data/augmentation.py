@@ -9,7 +9,7 @@ from typing import List
 import numpy as np
 import ruamel_yaml as yaml
 
-import src.main.python.utils
+import utils
 
 
 class StoriesAugmentation:
@@ -45,7 +45,7 @@ class StoriesAugmentation:
     def parse_story(cls, filename):
         with open(filename, 'rt') as file:
             content = file.read()
-            content = src.main.python.utils.remove_empty_lines(content)
+            content = utils.remove_empty_lines(content)
         stories = cls.split_stories(content)
         return [story for story in stories if story.strip() != ""]
 

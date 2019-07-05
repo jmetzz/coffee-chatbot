@@ -73,13 +73,13 @@ else
 fi
 
 # activate the conda dialogue environment
-#source activate coffee-bot
+source activate coffee-bot
 
 function process_chatette(){
     if [[ -f ./data/chatette/master.chatette ]]; then
         mkdir -p ./data/temp_chatette_output
-        python -m chatette ./data/chatette/master.chatette -o ./data/temp_chatette_output -s SEED
-        [[ ! -d ./data/nlu ]] && mkdir -p ./data/nlu
+        python -m chatette ./data/chatette/master.chatette -o ./data/temp_chatette_output -s ANYSEED
+        mkdir -p ./data/nlu
         mv ./data/temp_chatette_output/train/* ./data/nlu
         if [[ -d ./data/temp_chatette_output/test ]]; then
             mkdir -p ./data/nlu_test_data
@@ -89,9 +89,10 @@ function process_chatette(){
     fi
 }
 
+
 function generate_data(){
     process_chatette
-    # Add stories augmentation to
+    augment_stories
 }
 
 [[ GENERATE_DATA == 1 ]] && generate_data

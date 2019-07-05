@@ -1,0 +1,25 @@
+original_stories:
+    rule:
+        - [start, middle, end]
+    
+full_conversations:
+    rule:
+        - [start]
+        - [middle]
+        - [end]
+    amount: 20
+    
+long_conversations:
+    rule:
+        - [start]
+        - [middle]
+        - [middle]
+    amount: 0.5
+
+very_long_conversations:
+    rule:
+        - [start]
+        - [middle]
+        - [middle]
+        - [middle, end]
+    amount: 0.5

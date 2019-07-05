@@ -1,0 +1,98 @@
+// INTENTS
+// Yes + Positive
+%[yes](train:100, test:10)
+    ~[yes]
+    ~[yes?/70] ~[ok]
+
+%[positive](train:100, test:10)
+    ~[does_work]
+    ~[do]
+
+%[yes+positive](train:80, test:10)
+    ~[yes] ~[ok?/10] ~[does_work]
+    ~[yes] ~[ok?/20] ~[do]
+
+// No + Negative
+%[no](train:100, test:10)
+    ~[no]
+
+%[negative](train:100, test:10)
+    ~[does_not_work-std]
+    ~[does_not_work-alt]
+    ~[do_not]
+
+%[no+negative](train:80, test:10)
+    ~[no] ~[does_not_work]
+    ~[no] ~[do_not]
+
+// Mixed Types
+%[yes+negative](train:60, test:10)
+    ~[yes] ~[ok?/10] ~[does_not_work]
+    ~[yes] ~[ok?/10] ~[do_not]
+
+%[no+positive](train:60, test:10)
+    ~[no] ~[does_work]
+    ~[no] ~[do]
+
+// BLOCKS
+// Pure Yes/No words
+~[yes]
+    // Use standard yes 80f the time, and alternative 20% of the time
+    {yes/ya/yeap/yea}
+    {yes/ya/yeap/yea}
+    {yes/ya/yeap/yea}
+    {yes/ya/yeap/yea}
+    {sure}
+
+~[ok]
+    // Use frequent ok 80% of the time, and alternative 20% of the time
+    {ok/okay/perfect/great}
+    {ok/okay/perfect/great}
+    {ok/okay/perfect/great}
+    {ok/okay/perfect/great}
+    {owkay/okido/okidoki/perfecto}
+
+~[no]
+    // Use standard no 70% of the time, and alternative 30% of the time
+   {no/nope}
+   {no/nope}
+   {no/nope}
+   {no/nope}
+   {not/n/nah/nops}
+
+// Affirm/Negate
+~[does_not_work]
+    // Use standard "does not work" 60% of the time, and alternative 40% of the time
+    {~[does_not_work-std]/~[does_not_work-std]/~[does_not_work-std]/~[does_not_work-alt]/~[does_not_work-alt]}
+
+~[does_not_work-std]
+    {it/this?} didn't work
+    {it/this?} did not work
+    {it/this?} has not worked
+    {it/this?} hasn't worked
+
+~[does_not_work-alt]
+    {it/this?} didn't
+    {it/this?} did not
+    {no/not} success
+
+~[does_work]
+    [it/this?] worked perfectly?
+    it works
+    [it is?] in order
+    [it is?] ok
+    [it?] is good
+    now it works
+    perfect
+
+~[do]
+    it is good
+    it's good
+    it is better
+    it's better
+    this is ok
+    done
+
+~[do_not]
+    not done
+    I will not
