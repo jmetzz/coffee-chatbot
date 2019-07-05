@@ -1,0 +1,8 @@
+{
+  "short_name": "Xbot Chatbot GUI",
+  "name": "Xbot Chatbot GUI",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}

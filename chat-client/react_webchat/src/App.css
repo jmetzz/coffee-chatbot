@@ -1,0 +1,917 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans|Roboto);
+
+:root {
+  --chat-background-color: #c3e0e9;
+  --chat-color: #464646;
+  --chat-button-background-color: transparent;
+  --chat-button-border-color: #464646;
+  --chat-button-color: #464646;
+  --chat-button-hover-background-color: #5d6b6f;
+  --chat-button-hover-border-color: #fff;
+  --chat-button-hover-color: #fff;
+  --chat-button-light-background-color: transparent;
+  --chat-button-light-border-color: #000;
+  --chat-button-light-color: #000;
+  --chat-button-light-hover-background-color: #c3e0e9;
+  --chat-button-light-hover-border-color: #2382ff;
+  --chat-button-light-hover-color: #fff;
+
+  --training-background-color: #5d6b6f;
+  --training-color: #fff;
+  --training-button-background-color: transparent;
+  --training-button-border-color: #fff;
+  --training-button-color: #fff;
+  --training-button-hover-background-color: #c3e0e9;
+  --training-button-hover-border-color: #2382ff;
+  --training-button-hover-color: #5d6b6f;
+  --training-button-light-background-color: transparent;
+  --training-button-light-border-color: #000;
+  --training-button-light-color: #000;
+  --training-button-light-hover-background-color: #c3e0e9;
+  --training-button-light-hover-border-color: #2382ff;
+  --training-button-light-hover-color: #fff;
+
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif
+}
+
+body, p {
+    margin: 0
+}
+
+p {
+    display: inline-block
+}
+
+.App {
+    background-color: #fff;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center
+}
+
+.AppHeader {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    background-color: #fff;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center
+}
+
+.AppConversationDownloadSection {
+    background-color: #fff;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.AppStoryDownloadSection {
+    background-color: #fff;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.InteractiveTrainingSelectionSection {
+    background-color: #fff;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.ScreenSelectionSection {
+    background-color: #fff;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin-bottom:4px;
+}
+
+.selectionSection {
+    width: 100%;
+    height: 40px;
+    /*border-radius: 5px;*/
+    overflow-y: hidden;
+    font-size: 12px;
+    -webkit-box-shadow: 0 0 8px 0 rgba(0, 0, 0, .3);
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, .3);
+}
+
+.botForm {
+    margin: 40px;
+}
+
+.botForm td {
+    padding: 10px;
+}
+
+.botForm select {
+    font-size: 14px;
+    height: 40px;
+    background: hsla(0, 0%, 100%, .5);
+    outline: 0;
+    border: 2px solid #5d6b6f;
+    padding: 0 5px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    margin-left: 10px;
+    width: 270px
+}
+
+.botForm input {
+    font-size: 14px;
+    height: 40px;
+    background: hsla(0, 0%, 100%, .5);
+    outline: 0;
+    border: 2px solid #5d6b6f;
+    padding: 0 5px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    margin-left: 10px;
+    width: 255px
+}
+
+.trainStatus {
+    margin: 40px;
+}
+
+.trainStatus td {
+    padding: 10px;
+}
+
+.downloadLinkSection {
+    width: 1080px;
+    height: 40px;
+    /*border-radius: 5px;*/
+    overflow-y: hidden;
+    font-size: 12px;
+    -webkit-box-shadow: 0 0 8px 0 rgba(0, 0, 0, .3);
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, .3)
+}
+
+.chatview .downloadLinkSection {
+    background-color: var(--chat-background-color);
+}
+
+.trainingview .downloadLinkSection {
+    background-color: var(--training-background-color);
+    color: var(--training-color);
+}
+
+.downloadlink {
+    font-family: Roboto, cursive;
+    color: #000;
+    margin: 0;
+    height: 30px;
+    font-size: 14px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    border: 1px solid #5d6b6f;
+    /*border-radius: 5px;*/
+    cursor: pointer;
+    -webkit-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+    margin: 5px;
+    text-decoration: none;
+}
+
+.chatview .downloadlink {
+    background: var(--chat-button-background-color);
+    border-color: var(--chat-button-border-color);
+    color: var(--chat-button-color);
+}
+
+.chatview .downloadlink:hover {
+    background: var(--chat-button-hover-background-color);
+    border-color: var(--chat-button-hover-border-color);
+    color: var(--chat-button-hover-color);
+}
+
+.trainingview .downloadlink {
+    background: var(--training-button-background-color);
+    border-color: var(--training-button-border-color);
+    color: var(--training-button-color);
+}
+
+.trainingview .downloadlink:hover {
+    background: var(--training-button-hover-background-color);
+    border-color: var(--training-button-hover-border-color);
+    color: var(--training-button-hover-color);
+}
+
+
+
+.AppHeader button {
+    margin: 15px;
+}
+
+.columnheader {
+    text-align: left;
+}
+
+.chatroom {
+    width: 360px;
+    height: 605px;
+    background-color: #eeeeee;
+    border-radius: 5px;
+    overflow: hidden;
+    -webkit-box-shadow: 0 0 8px 0 rgba(0, 0, 0, .3);
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, .3)
+}
+
+h3 {
+    font-family: Roboto, cursive;
+    color: #fff;
+    margin: 0;
+    height: 40px;
+    font-size: 20px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center
+}
+
+.chatview h3 {
+    background-color: var(--chat-background-color);
+    color: var(--chat-color);
+}
+
+.trainingview h3 {
+    background-color: var(--training-background-color);
+    color: var(--training-color);
+}
+
+h2 {
+    margin-left: 10px;
+}
+
+.chatroom .chats {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0 20px;
+    margin: 10px 0 0;
+    height: 470px;
+    overflow-y: scroll
+}
+
+.chatroom .chats .chat {
+    background: hsla(0, 0%, 100%, .8);
+    position: relative;
+    padding: 5px 13px;
+    font-size: 14px;
+    border-radius: 10px;
+    list-style: none;
+    float: left;
+    clear: both;
+    margin: 10px 0;
+    max-width: 200px
+}
+
+.chatroom .chats .chat img {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: absolute;
+    top: -10px;
+    left: 0
+}
+
+.chatroom .chats .chat.right {
+    float: right;
+    clear: both
+}
+
+.chatroom .chats .chat a {
+    text-decoration: none;
+    color: #60a5af
+}
+
+.chatroom .events {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0 20px;
+    margin: 10px 0 0;
+    height: 470px;
+    overflow-y: scroll
+}
+
+.chatroom .events .event {
+    position: relative;
+    font-size: 14px;
+    list-style: none;
+    float: left;
+    clear: both;
+    margin: 6px 0;
+    max-width: 200px
+}
+
+.chatroom .events .event.message {
+    background: hsla(0, 0%, 100%, .8);
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 10px;
+}
+
+.chatroom .events .event.right {
+    float: right;
+    clear: both
+}
+
+.chatroom .events .event a {
+    text-decoration: none;
+    color: #60a5af
+}
+
+.event p {
+    font-weight: bold
+}
+
+.chatroom .input {
+    height: 40px;
+    width: 100%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+.chatview .chatroom .input {
+    background-color: var(--chat-background-color);
+}
+
+.trainingview .chatroom .input {
+    background-color: var(--training-background-color);
+    color: var(--training-color);
+}
+
+.chatroom .input input[type=text] {
+    background: hsla(0, 0%, 100%, .5);
+    outline: 0;
+    border: 2px solid #5d6b6f;
+    padding: 0 5px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    margin-left: 10px;
+    width: 270px
+}
+
+.chatroom .input input[type=submit], .chatroom .input input[type=text] {
+    height: 30px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 14px
+}
+
+.chatroom .input input[type=submit] {
+    border: 1px solid #5d6b6f;
+    width: 70px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    cursor: pointer;
+    -webkit-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease
+}
+
+.train {
+    width: 360px;
+    height: 605px;
+    background-color: #eeeeee;
+    border-radius: 5px;
+    overflow-y: scroll;
+    font-size: 12px;
+    -webkit-box-shadow: 0 0 8px 0 rgba(0, 0, 0, .3);
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, .3)
+}
+
+.train .input {
+    height: 40px;
+    width: 100%;
+    /*background: #00aeef;*/
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+.train .input input[type=text] {
+    background: hsla(0, 0%, 100%, .5);
+    outline: 0;
+    border: 2px solid #5d6b6f;
+    padding: 0 5px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    margin-left: 10px;
+    width: 270px
+}
+
+.train .input input[type=submit], .chatroom .input input[type=text] {
+    height: 30px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 14px
+}
+
+.train .input input[type=submit] {
+    border: 1px solid #5d6b6f;
+    width: 70px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    cursor: pointer;
+    -webkit-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease
+}
+
+.chatview .input input[type=text] {
+    border-color: var(--chat-button-border-color);
+}
+
+.trainingview .input input[type=text] {
+    border-color: var(--training-button-border-color);
+}
+
+.chatview .input input[type=submit] {
+    background: var(--chat-button-background-color);
+    border-color: var(--chat-button-border-color);
+    color: var(--chat-button-color);
+}
+
+.chatview .input input[type=submit]:hover {
+    background: var(--chat-button-hover-background-color);
+    border-color: var(--chat-button-hover-border-color);
+    color: var(--chat-button-hover-color);
+}
+
+.trainingview .input input[type=submit] {
+    background: var(--training-button-background-color);
+    border-color: var(--training-button-border-color);
+    color: var(--training-button-color);
+}
+
+.trainingview .input input[type=submit]:hover {
+    background: var(--training-button-hover-background-color);
+    border-color: var(--training-button-hover-border-color);
+    color: var(--training-button-hover-color);
+}
+
+
+.bigButtonSpace {
+    height: 40px;
+    width: 100%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-align: center;
+    align-items: center;
+    background-color: var(--chat-background-color);
+}
+
+.bigButtonSpace .button {
+    height: 30px;
+    font-size: 14px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    background: transparent;
+    border: 1px solid #5d6b6f;
+    /*border-radius: 5px;*/
+    cursor: pointer;
+    -webkit-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+    margin-left: 10px;
+    margin-bottom: 2px;
+}
+
+.bigButtonSpace .floatRight {
+    margin-left: auto;
+    margin-right: 10px;
+}
+
+/*.chatview .humanfeedback .button {*/
+    /*background: var(--chat-button-background-color);*/
+    /*border-color: var(--chat-button-border-color);*/
+    /*color: var(--chat-button-color);*/
+/*}*/
+
+/*.chatview .humanfeedback .button:hover {*/
+    /*background: var(--chat-button-hover-background-color);*/
+    /*border-color: var(--chat-button-hover-border-color);*/
+    /*color: var(--chat-button-hover-color);*/
+/*}*/
+
+.domain {
+    width: 360px;
+    height: 605px;
+    background-color: #eeeeee;
+    border-radius: 5px;
+    overflow-y: scroll;
+    font-size: 12px;
+    -webkit-box-shadow: 0 0 8px 0 rgba(0, 0, 0, .3);
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, .3)
+}
+
+.domain input[type=text] {
+    height: 30px;
+    width: 350px;
+    margin: 5px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 14px
+}
+
+.domainTemplates {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0 20px;
+    margin: 10px 0 0;
+    height: 485px;
+    overflow-y: scroll
+}
+
+.domainTemplates .domainTemplate {
+    position: relative;
+    font-size: 14px;
+    list-style: none;
+    float: left;
+    clear: both;
+    margin-top: 6px;
+    max-width: 200px
+}
+
+.domainTemplates .domainTemplate.message {
+    background: hsla(0, 0%, 100%, .8);
+    padding: 10px;
+    border-radius: 10px;
+    float: right;
+    clear: both
+}
+
+.domainItems {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0 20px;
+    margin: 10px 0 0;
+    height: 485px;
+    overflow-y: scroll
+}
+
+.domainItems .domainItem {
+    position: relative;
+    font-size: 14px;
+    list-style: none;
+    float: left;
+    clear: both;
+    margin-top: 6px;
+    max-width: 200px
+}
+
+.domainSlots {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0 20px;
+    margin: 10px 0 0;
+    height: 485px;
+    overflow-y: scroll
+}
+
+.domainSlots .domainSlot {
+    position: relative;
+    font-size: 14px;
+    list-style: none;
+    float: left;
+    clear: both;
+    margin-top: 6px;
+    max-width: 200px
+}
+
+.domainSlots .domainSlot.value {
+    background: hsla(0, 0%, 100%, .8);
+    padding: 10px;
+    border-radius: 10px;
+    float: right;
+    clear: both
+}
+
+.domainSlots .domainSlot.value.initial {
+    font-weight: bold;
+}
+
+.tracker {
+    width: 360px;
+    height: 605px;
+    background-color: #eeeeee;
+    border-radius: 5px;
+    overflow-y: scroll;
+    font-size: 12px;
+    -webkit-box-shadow: 0 0 8px 0 rgba(0, 0, 0, .3);
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, .3)
+}
+
+.buttonSpace {
+    height: 40px;
+    width: 100%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+.chatview .buttonSpace {
+    background-color: var(--chat-background-color);
+    color: var(--chat-color);
+}
+
+.trainingview .buttonSpace {
+    background-color: var(--training-background-color);
+    color: var(--training-color);
+}
+
+.buttonSpace .button {
+    height: 30px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 14px;
+    background: transparent;
+    border: 1px solid #5d6b6f;
+    width: 70px;
+    cursor: pointer;
+    -webkit-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+    margin-left: 10px;
+}
+
+.TabsSpace {
+    background-color: #5d6b6f;
+    height: 40px;
+    width: 100%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.TabsSpace .button {
+    height: 30px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 14px;
+    background: transparent;
+    border: 1px solid #5d6b6f;
+    cursor: pointer;
+    -webkit-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+    margin-left: 10px;
+}
+
+.TabsSpace .button {
+    background: transparent;
+    border-color: #fff;
+    color: #fff
+}
+
+.TabsSpace .button:disabled {
+    border: 1px transparent;
+    font-weight: bold;
+}
+
+.TabsSpace .button:hover {
+    background: #d3f2fc;
+    border-color: #5d6b6f;
+    color: #5d6b6f;
+}
+
+.TabsSpace .button:hover:disabled {
+    background: transparent;
+    border-color: #fff;
+    color: #fff;
+    border: 1px transparent;
+    font-weight: bold;
+}
+
+.trainStatus .button {
+    height: 30px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 14px;
+    background: transparent;
+    border: 1px solid #5d6b6f;
+    border-radius: 5px;
+    cursor: pointer;
+    -webkit-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+    margin-left: 10px;
+}
+
+.trainStatus .button {
+    background: #fff;
+    border-color: #000;
+    color: #000
+}
+
+.trainStatus .button:disabled {
+    border: 1px transparent;
+    font-weight: bold;
+}
+
+.trainStatus .button:hover {
+    background: #000;
+    border-color: #fff;
+    color: #fff;
+}
+
+.trainStatus .button:hover:disabled {
+    background: #fff;
+    border-color: #000;
+    color: #000;
+    border: 1px transparent;
+    font-weight: bold;
+}
+
+.train .button {
+    height: 18px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    background: transparent;
+    border: 1px solid #5d6b6f;
+    /*border-radius: 5px;*/
+    cursor: pointer;
+    -webkit-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+    margin-left: 10px;
+    margin-bottom: 2px;
+}
+
+.train .bigbutton .button {
+    height: 30px;
+    font-size: 14px;
+}
+
+.chatview .button {
+    background: var(--chat-button-background-color);
+    border-color: var(--chat-button-border-color);
+    color: var(--chat-button-color);
+}
+
+.chatview .button:hover {
+    background: var(--chat-button-hover-background-color);
+    border-color: var(--chat-button-hover-border-color);
+    color: var(--chat-button-hover-color);
+}
+
+.chatview .button:hover:disabled {
+    background: var(--chat-button-background-color);
+    border-color: var(--chat-button-border-color);
+    color: var(--chat-button-color);
+}
+
+.chatview .train .button {
+    background: var(--chat-button-light-background-color);
+    border-color: var(--chat-button-light-border-color);
+    color: var(--chat-button-light-color);
+}
+
+.chatview .train .button:hover {
+    background: var(--chat-button-light-hover-background-color);
+    border-color: var(--chat-button-light-hover-border-color);
+    color: var(--chat-button-light-hover-color);
+}
+
+.trainingview .button {
+    background: var(--training-button-background-color);
+    border-color: var(--training-button-border-color);
+    color: var(--training-button-color);
+}
+
+.trainingview .button:hover {
+    background: var(--training-button-hover-background-color);
+    border-color: var(--training-button-hover-border-color);
+    color: var(--training-button-hover-color);
+}
+
+.trainingview .train .button {
+    background: var(--training-button-light-background-color);
+    border-color: var(--training-button-light-border-color);
+    color: var(--training-button-light-color);
+}
+
+.trainingview .train .button:hover {
+    background: var(--training-button-light-hover-background-color);
+    border-color: var(--training-button-light-hover-border-color);
+    color: var(--training-button-light-hover-color);
+}
+
+.switch {
+    margin-left: 10px;
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+.senderid {
+    margin: 10px;
+    position: relative;
+    display: inline-block;
+    font-size: 20px;
+    height: 34px;
+}
+.senderlabel {
+    margin: 10px;
+    position: relative;
+    display: inline-block;
+    font-size: 14px;
+    text-align: right;
+}
+.senderid input[type=text] {
+    height: 30px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 14px
+}
+.trainingStatus {
+    margin: 10px;
+    position: relative;
+    display: inline-block;
+    font-size: 14px;
+    text-align: right;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked + .slider {
+    background-color: #219600;
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px #5d6b6f;
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+.switch input {display:none;}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
