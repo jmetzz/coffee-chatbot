@@ -108,6 +108,7 @@ case ${remaining_arguments[0]} in
         python "$SRC"/utils/verify.py
         ;;
     train)
+        source .env
         rasa train -c $CONFIG_FILE -d $DOMAIN_FILE $DEBUG --data $DATA_PATH nlu core
         ;;
     evaluate)

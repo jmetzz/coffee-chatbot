@@ -7,20 +7,30 @@ services:
     ports:
     - "5005:5005"
     volumes:
-    - "./models:/app/models"
-    - "./config:/app/config"
+    - "./bot-core/models:/app/models"
+    - "./bot-core/config:/app/config"
     - "./logs:/app/logs"
-    - "./data:/app/data"
+    - "./bot-core/data:/app/data"
     restart: on-failure
     command: [ "run", "--debug", "-p", "5005", "--credentials", "./config/credentials.yml", "--endpoints", "./config/endpoints.yml"]
 
   action_server:
-    image: rasa/rasa-sdk
+    build: ./action-server
+    image: coffee-bof-action-server
+    container_name: coffee-bof-action-server
     networks: ['coffee-bot-network']
+    tty: true
     ports:
     - "5055:5055"
+    environment:
+        - SERVER_PORT=5055
+        - NUMBER_OF_WORKERS=1
+        - GUNICORN_TIMEOUT=300
+        - LOGGING_CONFIG=/app/src/main/resources/config/logging_config.local.ini
+    command: run
     volumes:
-    - "./actions:/app/actions"
+    - "./bot-core/src/main/python/actions:/app/actions"
+
 
   duckling:
     image: rasa/duckling

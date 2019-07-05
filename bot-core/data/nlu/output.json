@@ -1,0 +1,1953 @@
+{
+  "rasa_nlu_data": {
+    "common_examples": [
+      {
+        "entities": [],
+        "intent": "yes",
+        "text": "yea okay"
+      },
+      {
+        "entities": [],
+        "intent": "yes",
+        "text": "sure ok"
+      },
+      {
+        "entities": [],
+        "intent": "yes",
+        "text": "yes"
+      },
+      {
+        "entities": [],
+        "intent": "yes",
+        "text": "yea perfect"
+      },
+      {
+        "entities": [],
+        "intent": "yes",
+        "text": "ok"
+      },
+      {
+        "entities": [],
+        "intent": "yes",
+        "text": "yeap perfect"
+      },
+      {
+        "entities": [],
+        "intent": "yes",
+        "text": "sure great"
+      },
+      {
+        "entities": [],
+        "intent": "yes",
+        "text": "sure"
+      },
+      {
+        "entities": [],
+        "intent": "yes",
+        "text": "yea"
+      },
+      {
+        "entities": [],
+        "intent": "yes",
+        "text": "ya"
+      },
+      {
+        "entities": [],
+        "intent": "yes",
+        "text": "yeap okay"
+      },
+      {
+        "entities": [],
+        "intent": "yes",
+        "text": "yes great"
+      },
+      {
+        "entities": [],
+        "intent": "yes",
+        "text": "sure okido"
+      },
+      {
+        "entities": [],
+        "intent": "yes",
+        "text": "yeap ok"
+      },
+      {
+        "entities": [],
+        "intent": "yes",
+        "text": "yea ok"
+      },
+      {
+        "entities": [],
+        "intent": "yes",
+        "text": "yeap"
+      },
+      {
+        "entities": [],
+        "intent": "yes",
+        "text": "yes okay"
+      },
+      {
+        "entities": [],
+        "intent": "yes",
+        "text": "yeap great"
+      },
+      {
+        "entities": [],
+        "intent": "yes",
+        "text": "perfect"
+      },
+      {
+        "entities": [],
+        "intent": "yes",
+        "text": "okay"
+      },
+      {
+        "entities": [],
+        "intent": "yes",
+        "text": "great"
+      },
+      {
+        "entities": [],
+        "intent": "yes",
+        "text": "sure okay"
+      },
+      {
+        "entities": [],
+        "intent": "yes",
+        "text": "yea great"
+      },
+      {
+        "entities": [],
+        "intent": "yes",
+        "text": "ya ok"
+      },
+      {
+        "entities": [],
+        "intent": "yes",
+        "text": "ya okay"
+      },
+      {
+        "entities": [],
+        "intent": "yes",
+        "text": "ya perfect"
+      },
+      {
+        "entities": [],
+        "intent": "yes",
+        "text": "yes perfect"
+      },
+      {
+        "entities": [],
+        "intent": "yes",
+        "text": "okido"
+      },
+      {
+        "entities": [],
+        "intent": "yes",
+        "text": "yes perfecto"
+      },
+      {
+        "entities": [],
+        "intent": "yes",
+        "text": "yea okido"
+      },
+      {
+        "entities": [],
+        "intent": "yes",
+        "text": "yea okidoki"
+      },
+      {
+        "entities": [],
+        "intent": "yes",
+        "text": "yeap perfecto"
+      },
+      {
+        "entities": [],
+        "intent": "yes",
+        "text": "ya great"
+      },
+      {
+        "entities": [],
+        "intent": "yes",
+        "text": "sure perfect"
+      },
+      {
+        "entities": [],
+        "intent": "yes",
+        "text": "ya okidoki"
+      },
+      {
+        "entities": [],
+        "intent": "yes",
+        "text": "owkay"
+      },
+      {
+        "entities": [],
+        "intent": "yes",
+        "text": "yeap owkay"
+      },
+      {
+        "entities": [],
+        "intent": "yes",
+        "text": "yes ok"
+      },
+      {
+        "entities": [],
+        "intent": "yes",
+        "text": "yeap okido"
+      },
+      {
+        "entities": [],
+        "intent": "yes",
+        "text": "yea owkay"
+      },
+      {
+        "entities": [],
+        "intent": "yes",
+        "text": "yes okido"
+      },
+      {
+        "entities": [],
+        "intent": "yes",
+        "text": "sure perfecto"
+      },
+      {
+        "entities": [],
+        "intent": "yes",
+        "text": "perfecto"
+      },
+      {
+        "entities": [],
+        "intent": "yes",
+        "text": "ya okido"
+      },
+      {
+        "entities": [],
+        "intent": "yes",
+        "text": "yes okidoki"
+      },
+      {
+        "entities": [],
+        "intent": "yes",
+        "text": "yes owkay"
+      },
+      {
+        "entities": [],
+        "intent": "yes",
+        "text": "yea perfecto"
+      },
+      {
+        "entities": [],
+        "intent": "yes",
+        "text": "okidoki"
+      },
+      {
+        "entities": [],
+        "intent": "yes",
+        "text": "sure okidoki"
+      },
+      {
+        "entities": [],
+        "intent": "yes",
+        "text": "yeap okidoki"
+      },
+      {
+        "entities": [],
+        "intent": "yes",
+        "text": "ya perfecto"
+      },
+      {
+        "entities": [],
+        "intent": "yes",
+        "text": "ya owkay"
+      },
+      {
+        "entities": [],
+        "intent": "yes",
+        "text": "sure owkay"
+      },
+      {
+        "entities": [],
+        "intent": "positive",
+        "text": "worked perfectly?"
+      },
+      {
+        "entities": [],
+        "intent": "positive",
+        "text": "it/this worked perfectly?"
+      },
+      {
+        "entities": [],
+        "intent": "positive",
+        "text": "it works"
+      },
+      {
+        "entities": [],
+        "intent": "positive",
+        "text": "in order"
+      },
+      {
+        "entities": [],
+        "intent": "positive",
+        "text": "it is in order"
+      },
+      {
+        "entities": [],
+        "intent": "positive",
+        "text": "ok"
+      },
+      {
+        "entities": [],
+        "intent": "positive",
+        "text": "it is ok"
+      },
+      {
+        "entities": [],
+        "intent": "positive",
+        "text": "is good"
+      },
+      {
+        "entities": [],
+        "intent": "positive",
+        "text": "it is good"
+      },
+      {
+        "entities": [],
+        "intent": "positive",
+        "text": "now it works"
+      },
+      {
+        "entities": [],
+        "intent": "positive",
+        "text": "perfect"
+      },
+      {
+        "entities": [],
+        "intent": "positive",
+        "text": "it is good"
+      },
+      {
+        "entities": [],
+        "intent": "positive",
+        "text": "it's good"
+      },
+      {
+        "entities": [],
+        "intent": "positive",
+        "text": "it is better"
+      },
+      {
+        "entities": [],
+        "intent": "positive",
+        "text": "it's better"
+      },
+      {
+        "entities": [],
+        "intent": "positive",
+        "text": "this is ok"
+      },
+      {
+        "entities": [],
+        "intent": "positive",
+        "text": "done"
+      },
+      {
+        "entities": [],
+        "intent": "yes+positive",
+        "text": "ya it's good"
+      },
+      {
+        "entities": [],
+        "intent": "yes+positive",
+        "text": "yes it is ok"
+      },
+      {
+        "entities": [],
+        "intent": "yes+positive",
+        "text": "yeap ok"
+      },
+      {
+        "entities": [],
+        "intent": "yes+positive",
+        "text": "yea ok done"
+      },
+      {
+        "entities": [],
+        "intent": "yes+positive",
+        "text": "yes now it works"
+      },
+      {
+        "entities": [],
+        "intent": "yes+positive",
+        "text": "yes it is good"
+      },
+      {
+        "entities": [],
+        "intent": "yes+positive",
+        "text": "yeap it/this worked perfectly?"
+      },
+      {
+        "entities": [],
+        "intent": "yes+positive",
+        "text": "sure it works"
+      },
+      {
+        "entities": [],
+        "intent": "yes+positive",
+        "text": "yeap done"
+      },
+      {
+        "entities": [],
+        "intent": "yes+positive",
+        "text": "yes this is ok"
+      },
+      {
+        "entities": [],
+        "intent": "yes+positive",
+        "text": "ya it is in order"
+      },
+      {
+        "entities": [],
+        "intent": "yes+positive",
+        "text": "yeap it is in order"
+      },
+      {
+        "entities": [],
+        "intent": "yes+positive",
+        "text": "yes great it is better"
+      },
+      {
+        "entities": [],
+        "intent": "yes+positive",
+        "text": "ya perfect it's better"
+      },
+      {
+        "entities": [],
+        "intent": "yes+positive",
+        "text": "sure now it works"
+      },
+      {
+        "entities": [],
+        "intent": "yes+positive",
+        "text": "yes okidoki it is good"
+      },
+      {
+        "entities": [],
+        "intent": "yes+positive",
+        "text": "ya this is ok"
+      },
+      {
+        "entities": [],
+        "intent": "yes+positive",
+        "text": "sure this is ok"
+      },
+      {
+        "entities": [],
+        "intent": "yes+positive",
+        "text": "yes it's better"
+      },
+      {
+        "entities": [],
+        "intent": "yes+positive",
+        "text": "yes it is better"
+      },
+      {
+        "entities": [],
+        "intent": "yes+positive",
+        "text": "yea done"
+      },
+      {
+        "entities": [],
+        "intent": "yes+positive",
+        "text": "yeap worked perfectly?"
+      },
+      {
+        "entities": [],
+        "intent": "yes+positive",
+        "text": "yes ok"
+      },
+      {
+        "entities": [],
+        "intent": "yes+positive",
+        "text": "yeap it is good"
+      },
+      {
+        "entities": [],
+        "intent": "yes+positive",
+        "text": "yes perfecto worked perfectly?"
+      },
+      {
+        "entities": [],
+        "intent": "yes+positive",
+        "text": "yes great it works"
+      },
+      {
+        "entities": [],
+        "intent": "yes+positive",
+        "text": "yeap is good"
+      },
+      {
+        "entities": [],
+        "intent": "yes+positive",
+        "text": "yeap okidoki it is ok"
+      },
+      {
+        "entities": [],
+        "intent": "yes+positive",
+        "text": "yea it's better"
+      },
+      {
+        "entities": [],
+        "intent": "yes+positive",
+        "text": "yeap it works"
+      },
+      {
+        "entities": [],
+        "intent": "yes+positive",
+        "text": "sure it's good"
+      },
+      {
+        "entities": [],
+        "intent": "yes+positive",
+        "text": "sure it is better"
+      },
+      {
+        "entities": [],
+        "intent": "yes+positive",
+        "text": "sure it is ok"
+      },
+      {
+        "entities": [],
+        "intent": "yes+positive",
+        "text": "yes perfect"
+      },
+      {
+        "entities": [],
+        "intent": "yes+positive",
+        "text": "yea okay perfect"
+      },
+      {
+        "entities": [],
+        "intent": "yes+positive",
+        "text": "yes perfecto this is ok"
+      },
+      {
+        "entities": [],
+        "intent": "yes+positive",
+        "text": "ya perfect"
+      },
+      {
+        "entities": [],
+        "intent": "yes+positive",
+        "text": "yea it is good"
+      },
+      {
+        "entities": [],
+        "intent": "yes+positive",
+        "text": "yes owkay it's better"
+      },
+      {
+        "entities": [],
+        "intent": "yes+positive",
+        "text": "ya worked perfectly?"
+      },
+      {
+        "entities": [],
+        "intent": "yes+positive",
+        "text": "ya it/this worked perfectly?"
+      },
+      {
+        "entities": [],
+        "intent": "yes+positive",
+        "text": "yeap great this is ok"
+      },
+      {
+        "entities": [],
+        "intent": "yes+positive",
+        "text": "ya it is good"
+      },
+      {
+        "entities": [],
+        "intent": "yes+positive",
+        "text": "sure is good"
+      },
+      {
+        "entities": [],
+        "intent": "yes+positive",
+        "text": "yea it's good"
+      },
+      {
+        "entities": [],
+        "intent": "yes+positive",
+        "text": "ya it's better"
+      },
+      {
+        "entities": [],
+        "intent": "yes+positive",
+        "text": "yea it is ok"
+      },
+      {
+        "entities": [],
+        "intent": "yes+positive",
+        "text": "yes ok this is ok"
+      },
+      {
+        "entities": [],
+        "intent": "yes+positive",
+        "text": "ya it is better"
+      },
+      {
+        "entities": [],
+        "intent": "yes+positive",
+        "text": "sure it's better"
+      },
+      {
+        "entities": [],
+        "intent": "yes+positive",
+        "text": "yeap it is ok"
+      },
+      {
+        "entities": [],
+        "intent": "yes+positive",
+        "text": "yea it is better"
+      },
+      {
+        "entities": [],
+        "intent": "yes+positive",
+        "text": "yea it works"
+      },
+      {
+        "entities": [],
+        "intent": "yes+positive",
+        "text": "yes done"
+      },
+      {
+        "entities": [],
+        "intent": "yes+positive",
+        "text": "sure perfect"
+      },
+      {
+        "entities": [],
+        "intent": "yes+positive",
+        "text": "yeap it's better"
+      },
+      {
+        "entities": [],
+        "intent": "yes+positive",
+        "text": "ya now it works"
+      },
+      {
+        "entities": [],
+        "intent": "yes+positive",
+        "text": "yeap in order"
+      },
+      {
+        "entities": [],
+        "intent": "yes+positive",
+        "text": "ya okido this is ok"
+      },
+      {
+        "entities": [],
+        "intent": "yes+positive",
+        "text": "yea perfect"
+      },
+      {
+        "entities": [],
+        "intent": "yes+positive",
+        "text": "sure worked perfectly?"
+      },
+      {
+        "entities": [],
+        "intent": "yes+positive",
+        "text": "ya it works"
+      },
+      {
+        "entities": [],
+        "intent": "yes+positive",
+        "text": "ya in order"
+      },
+      {
+        "entities": [],
+        "intent": "yes+positive",
+        "text": "yea now it works"
+      },
+      {
+        "entities": [],
+        "intent": "yes+positive",
+        "text": "yeap perfect"
+      },
+      {
+        "entities": [],
+        "intent": "yes+positive",
+        "text": "yeap perfect this is ok"
+      },
+      {
+        "entities": [],
+        "intent": "yes+positive",
+        "text": "yeap it is better"
+      },
+      {
+        "entities": [],
+        "intent": "yes+positive",
+        "text": "yeap perfect it's good"
+      },
+      {
+        "entities": [],
+        "intent": "yes+positive",
+        "text": "yea it is in order"
+      },
+      {
+        "entities": [],
+        "intent": "yes+positive",
+        "text": "yes perfect worked perfectly?"
+      },
+      {
+        "entities": [],
+        "intent": "yes+positive",
+        "text": "yea perfecto now it works"
+      },
+      {
+        "entities": [],
+        "intent": "yes+positive",
+        "text": "ya great it's good"
+      },
+      {
+        "entities": [],
+        "intent": "yes+positive",
+        "text": "yea in order"
+      },
+      {
+        "entities": [],
+        "intent": "yes+positive",
+        "text": "yea this is ok"
+      },
+      {
+        "entities": [],
+        "intent": "yes+positive",
+        "text": "yea ok"
+      },
+      {
+        "entities": [],
+        "intent": "yes+positive",
+        "text": "ya okay it works"
+      },
+      {
+        "entities": [],
+        "intent": "yes+positive",
+        "text": "yea great it is ok"
+      },
+      {
+        "entities": [],
+        "intent": "yes+positive",
+        "text": "sure it is good"
+      },
+      {
+        "entities": [],
+        "intent": "yes+positive",
+        "text": "ya ok it is good"
+      },
+      {
+        "entities": [],
+        "intent": "yes+positive",
+        "text": "yeap ok is good"
+      },
+      {
+        "entities": [],
+        "intent": "no",
+        "text": "no"
+      },
+      {
+        "entities": [],
+        "intent": "no",
+        "text": "nope"
+      },
+      {
+        "entities": [],
+        "intent": "no",
+        "text": "no"
+      },
+      {
+        "entities": [],
+        "intent": "no",
+        "text": "nope"
+      },
+      {
+        "entities": [],
+        "intent": "no",
+        "text": "no"
+      },
+      {
+        "entities": [],
+        "intent": "no",
+        "text": "nope"
+      },
+      {
+        "entities": [],
+        "intent": "no",
+        "text": "no"
+      },
+      {
+        "entities": [],
+        "intent": "no",
+        "text": "nope"
+      },
+      {
+        "entities": [],
+        "intent": "no",
+        "text": "not"
+      },
+      {
+        "entities": [],
+        "intent": "no",
+        "text": "n"
+      },
+      {
+        "entities": [],
+        "intent": "no",
+        "text": "nah"
+      },
+      {
+        "entities": [],
+        "intent": "no",
+        "text": "nops"
+      },
+      {
+        "entities": [],
+        "intent": "negative",
+        "text": "didn't work"
+      },
+      {
+        "entities": [],
+        "intent": "negative",
+        "text": "it didn't work"
+      },
+      {
+        "entities": [],
+        "intent": "negative",
+        "text": "this didn't work"
+      },
+      {
+        "entities": [],
+        "intent": "negative",
+        "text": "did not work"
+      },
+      {
+        "entities": [],
+        "intent": "negative",
+        "text": "it did not work"
+      },
+      {
+        "entities": [],
+        "intent": "negative",
+        "text": "this did not work"
+      },
+      {
+        "entities": [],
+        "intent": "negative",
+        "text": "has not worked"
+      },
+      {
+        "entities": [],
+        "intent": "negative",
+        "text": "it has not worked"
+      },
+      {
+        "entities": [],
+        "intent": "negative",
+        "text": "this has not worked"
+      },
+      {
+        "entities": [],
+        "intent": "negative",
+        "text": "hasn't worked"
+      },
+      {
+        "entities": [],
+        "intent": "negative",
+        "text": "it hasn't worked"
+      },
+      {
+        "entities": [],
+        "intent": "negative",
+        "text": "this hasn't worked"
+      },
+      {
+        "entities": [],
+        "intent": "negative",
+        "text": "didn't"
+      },
+      {
+        "entities": [],
+        "intent": "negative",
+        "text": "it didn't"
+      },
+      {
+        "entities": [],
+        "intent": "negative",
+        "text": "this didn't"
+      },
+      {
+        "entities": [],
+        "intent": "negative",
+        "text": "did not"
+      },
+      {
+        "entities": [],
+        "intent": "negative",
+        "text": "it did not"
+      },
+      {
+        "entities": [],
+        "intent": "negative",
+        "text": "this did not"
+      },
+      {
+        "entities": [],
+        "intent": "negative",
+        "text": "no success"
+      },
+      {
+        "entities": [],
+        "intent": "negative",
+        "text": "not success"
+      },
+      {
+        "entities": [],
+        "intent": "negative",
+        "text": "not done"
+      },
+      {
+        "entities": [],
+        "intent": "negative",
+        "text": "I will not"
+      },
+      {
+        "entities": [],
+        "intent": "no+negative",
+        "text": "no not done"
+      },
+      {
+        "entities": [],
+        "intent": "no+negative",
+        "text": "no I will not"
+      },
+      {
+        "entities": [],
+        "intent": "no+negative",
+        "text": "nah not done"
+      },
+      {
+        "entities": [],
+        "intent": "no+negative",
+        "text": "no hasn't worked"
+      },
+      {
+        "entities": [],
+        "intent": "no+negative",
+        "text": "nope didn't work"
+      },
+      {
+        "entities": [],
+        "intent": "no+negative",
+        "text": "no did not"
+      },
+      {
+        "entities": [],
+        "intent": "no+negative",
+        "text": "nope I will not"
+      },
+      {
+        "entities": [],
+        "intent": "no+negative",
+        "text": "n did not work"
+      },
+      {
+        "entities": [],
+        "intent": "no+negative",
+        "text": "no did not work"
+      },
+      {
+        "entities": [],
+        "intent": "no+negative",
+        "text": "nope did not"
+      },
+      {
+        "entities": [],
+        "intent": "no+negative",
+        "text": "nope didn't"
+      },
+      {
+        "entities": [],
+        "intent": "no+negative",
+        "text": "nope hasn't worked"
+      },
+      {
+        "entities": [],
+        "intent": "no+negative",
+        "text": "no didn't"
+      },
+      {
+        "entities": [],
+        "intent": "no+negative",
+        "text": "nope not done"
+      },
+      {
+        "entities": [],
+        "intent": "no+negative",
+        "text": "no didn't work"
+      },
+      {
+        "entities": [],
+        "intent": "no+negative",
+        "text": "n no success"
+      },
+      {
+        "entities": [],
+        "intent": "no+negative",
+        "text": "n I will not"
+      },
+      {
+        "entities": [],
+        "intent": "no+negative",
+        "text": "not not done"
+      },
+      {
+        "entities": [],
+        "intent": "no+negative",
+        "text": "nope did not work"
+      },
+      {
+        "entities": [],
+        "intent": "no+negative",
+        "text": "nops didn't work"
+      },
+      {
+        "entities": [],
+        "intent": "no+negative",
+        "text": "n hasn't worked"
+      },
+      {
+        "entities": [],
+        "intent": "no+negative",
+        "text": "nah not success"
+      },
+      {
+        "entities": [],
+        "intent": "no+negative",
+        "text": "nope not success"
+      },
+      {
+        "entities": [],
+        "intent": "no+negative",
+        "text": "nah didn't work"
+      },
+      {
+        "entities": [],
+        "intent": "no+negative",
+        "text": "nah did not"
+      },
+      {
+        "entities": [],
+        "intent": "no+negative",
+        "text": "not did not work"
+      },
+      {
+        "entities": [],
+        "intent": "no+negative",
+        "text": "no not success"
+      },
+      {
+        "entities": [],
+        "intent": "no+negative",
+        "text": "nops did not"
+      },
+      {
+        "entities": [],
+        "intent": "no+negative",
+        "text": "nah I will not"
+      },
+      {
+        "entities": [],
+        "intent": "no+negative",
+        "text": "not I will not"
+      },
+      {
+        "entities": [],
+        "intent": "no+negative",
+        "text": "nope has not worked"
+      },
+      {
+        "entities": [],
+        "intent": "no+negative",
+        "text": "no no success"
+      },
+      {
+        "entities": [],
+        "intent": "no+negative",
+        "text": "not didn't work"
+      },
+      {
+        "entities": [],
+        "intent": "no+negative",
+        "text": "no has not worked"
+      },
+      {
+        "entities": [],
+        "intent": "no+negative",
+        "text": "nops did not work"
+      },
+      {
+        "entities": [],
+        "intent": "no+negative",
+        "text": "not no success"
+      },
+      {
+        "entities": [],
+        "intent": "no+negative",
+        "text": "nops not success"
+      },
+      {
+        "entities": [],
+        "intent": "no+negative",
+        "text": "n didn't work"
+      },
+      {
+        "entities": [],
+        "intent": "no+negative",
+        "text": "n did not"
+      },
+      {
+        "entities": [],
+        "intent": "no+negative",
+        "text": "nops I will not"
+      },
+      {
+        "entities": [],
+        "intent": "no+negative",
+        "text": "n not done"
+      },
+      {
+        "entities": [],
+        "intent": "no+negative",
+        "text": "nah did not work"
+      },
+      {
+        "entities": [],
+        "intent": "no+negative",
+        "text": "nops hasn't worked"
+      },
+      {
+        "entities": [],
+        "intent": "no+negative",
+        "text": "nah has not worked"
+      },
+      {
+        "entities": [],
+        "intent": "no+negative",
+        "text": "nops has not worked"
+      },
+      {
+        "entities": [],
+        "intent": "no+negative",
+        "text": "nope no success"
+      },
+      {
+        "entities": [],
+        "intent": "no+negative",
+        "text": "not didn't"
+      },
+      {
+        "entities": [],
+        "intent": "no+negative",
+        "text": "nops not done"
+      },
+      {
+        "entities": [],
+        "intent": "no+negative",
+        "text": "n not success"
+      },
+      {
+        "entities": [],
+        "intent": "no+negative",
+        "text": "not hasn't worked"
+      },
+      {
+        "entities": [],
+        "intent": "no+negative",
+        "text": "nops didn't"
+      },
+      {
+        "entities": [],
+        "intent": "no+negative",
+        "text": "n has not worked"
+      },
+      {
+        "entities": [],
+        "intent": "no+negative",
+        "text": "nah hasn't worked"
+      },
+      {
+        "entities": [],
+        "intent": "no+negative",
+        "text": "not not success"
+      },
+      {
+        "entities": [],
+        "intent": "no+negative",
+        "text": "not has not worked"
+      },
+      {
+        "entities": [],
+        "intent": "no+negative",
+        "text": "n didn't"
+      },
+      {
+        "entities": [],
+        "intent": "no+negative",
+        "text": "nah didn't"
+      },
+      {
+        "entities": [],
+        "intent": "no+negative",
+        "text": "not did not"
+      },
+      {
+        "entities": [],
+        "intent": "no+negative",
+        "text": "nah no success"
+      },
+      {
+        "entities": [],
+        "intent": "no+negative",
+        "text": "nops no success"
+      },
+      {
+        "entities": [],
+        "intent": "yes+negative",
+        "text": "ya did not"
+      },
+      {
+        "entities": [],
+        "intent": "yes+negative",
+        "text": "yea okay did not"
+      },
+      {
+        "entities": [],
+        "intent": "yes+negative",
+        "text": "yeap didn't work"
+      },
+      {
+        "entities": [],
+        "intent": "yes+negative",
+        "text": "yea not success"
+      },
+      {
+        "entities": [],
+        "intent": "yes+negative",
+        "text": "yea did not work"
+      },
+      {
+        "entities": [],
+        "intent": "yes+negative",
+        "text": "yes did not"
+      },
+      {
+        "entities": [],
+        "intent": "yes+negative",
+        "text": "sure hasn't worked"
+      },
+      {
+        "entities": [],
+        "intent": "yes+negative",
+        "text": "yeap I will not"
+      },
+      {
+        "entities": [],
+        "intent": "yes+negative",
+        "text": "yeap hasn't worked"
+      },
+      {
+        "entities": [],
+        "intent": "yes+negative",
+        "text": "sure great didn't"
+      },
+      {
+        "entities": [],
+        "intent": "yes+negative",
+        "text": "yes I will not"
+      },
+      {
+        "entities": [],
+        "intent": "yes+negative",
+        "text": "ya I will not"
+      },
+      {
+        "entities": [],
+        "intent": "yes+negative",
+        "text": "yeap ok didn't work"
+      },
+      {
+        "entities": [],
+        "intent": "yes+negative",
+        "text": "ya not done"
+      },
+      {
+        "entities": [],
+        "intent": "yes+negative",
+        "text": "sure not done"
+      },
+      {
+        "entities": [],
+        "intent": "yes+negative",
+        "text": "yeap did not work"
+      },
+      {
+        "entities": [],
+        "intent": "yes+negative",
+        "text": "sure did not"
+      },
+      {
+        "entities": [],
+        "intent": "yes+negative",
+        "text": "yes okay not done"
+      },
+      {
+        "entities": [],
+        "intent": "yes+negative",
+        "text": "yes didn't"
+      },
+      {
+        "entities": [],
+        "intent": "yes+negative",
+        "text": "yea didn't work"
+      },
+      {
+        "entities": [],
+        "intent": "yes+negative",
+        "text": "yeap ok did not work"
+      },
+      {
+        "entities": [],
+        "intent": "yes+negative",
+        "text": "yea has not worked"
+      },
+      {
+        "entities": [],
+        "intent": "yes+negative",
+        "text": "ya has not worked"
+      },
+      {
+        "entities": [],
+        "intent": "yes+negative",
+        "text": "yea not done"
+      },
+      {
+        "entities": [],
+        "intent": "yes+negative",
+        "text": "yea I will not"
+      },
+      {
+        "entities": [],
+        "intent": "yes+negative",
+        "text": "sure okay did not work"
+      },
+      {
+        "entities": [],
+        "intent": "yes+negative",
+        "text": "yea no success"
+      },
+      {
+        "entities": [],
+        "intent": "yes+negative",
+        "text": "yea did not"
+      },
+      {
+        "entities": [],
+        "intent": "yes+negative",
+        "text": "yeap no success"
+      },
+      {
+        "entities": [],
+        "intent": "yes+negative",
+        "text": "yes not done"
+      },
+      {
+        "entities": [],
+        "intent": "yes+negative",
+        "text": "yea okay I will not"
+      },
+      {
+        "entities": [],
+        "intent": "yes+negative",
+        "text": "yes hasn't worked"
+      },
+      {
+        "entities": [],
+        "intent": "yes+negative",
+        "text": "yeap didn't"
+      },
+      {
+        "entities": [],
+        "intent": "yes+negative",
+        "text": "sure has not worked"
+      },
+      {
+        "entities": [],
+        "intent": "yes+negative",
+        "text": "yes did not work"
+      },
+      {
+        "entities": [],
+        "intent": "yes+negative",
+        "text": "sure I will not"
+      },
+      {
+        "entities": [],
+        "intent": "yes+negative",
+        "text": "yes perfect has not worked"
+      },
+      {
+        "entities": [],
+        "intent": "yes+negative",
+        "text": "ya hasn't worked"
+      },
+      {
+        "entities": [],
+        "intent": "yes+negative",
+        "text": "yes okidoki not done"
+      },
+      {
+        "entities": [],
+        "intent": "yes+negative",
+        "text": "yes has not worked"
+      },
+      {
+        "entities": [],
+        "intent": "yes+negative",
+        "text": "yea ok I will not"
+      },
+      {
+        "entities": [],
+        "intent": "yes+negative",
+        "text": "yeap has not worked"
+      },
+      {
+        "entities": [],
+        "intent": "yes+negative",
+        "text": "ya no success"
+      },
+      {
+        "entities": [],
+        "intent": "yes+negative",
+        "text": "sure didn't"
+      },
+      {
+        "entities": [],
+        "intent": "yes+negative",
+        "text": "sure not success"
+      },
+      {
+        "entities": [],
+        "intent": "yes+negative",
+        "text": "ya okay not done"
+      },
+      {
+        "entities": [],
+        "intent": "yes+negative",
+        "text": "yeap not success"
+      },
+      {
+        "entities": [],
+        "intent": "yes+negative",
+        "text": "yeap did not"
+      },
+      {
+        "entities": [],
+        "intent": "yes+negative",
+        "text": "yea didn't"
+      },
+      {
+        "entities": [],
+        "intent": "yes+negative",
+        "text": "ya did not work"
+      },
+      {
+        "entities": [],
+        "intent": "yes+negative",
+        "text": "yes didn't work"
+      },
+      {
+        "entities": [],
+        "intent": "yes+negative",
+        "text": "yea okay not done"
+      },
+      {
+        "entities": [],
+        "intent": "yes+negative",
+        "text": "yea great no success"
+      },
+      {
+        "entities": [],
+        "intent": "yes+negative",
+        "text": "yeap perfect has not worked"
+      },
+      {
+        "entities": [],
+        "intent": "yes+negative",
+        "text": "ya didn't work"
+      },
+      {
+        "entities": [],
+        "intent": "yes+negative",
+        "text": "ya great didn't work"
+      },
+      {
+        "entities": [],
+        "intent": "yes+negative",
+        "text": "ya great I will not"
+      },
+      {
+        "entities": [],
+        "intent": "yes+negative",
+        "text": "yea ok did not"
+      },
+      {
+        "entities": [],
+        "intent": "yes+negative",
+        "text": "yeap okay did not work"
+      },
+      {
+        "entities": [],
+        "intent": "yes+negative",
+        "text": "sure no success"
+      },
+      {
+        "entities": [],
+        "intent": "no+positive",
+        "text": "no this is ok"
+      },
+      {
+        "entities": [],
+        "intent": "no+positive",
+        "text": "nope it is ok"
+      },
+      {
+        "entities": [],
+        "intent": "no+positive",
+        "text": "no it is good"
+      },
+      {
+        "entities": [],
+        "intent": "no+positive",
+        "text": "nops perfect"
+      },
+      {
+        "entities": [],
+        "intent": "no+positive",
+        "text": "no now it works"
+      },
+      {
+        "entities": [],
+        "intent": "no+positive",
+        "text": "nope it's good"
+      },
+      {
+        "entities": [],
+        "intent": "no+positive",
+        "text": "nope done"
+      },
+      {
+        "entities": [],
+        "intent": "no+positive",
+        "text": "no it's better"
+      },
+      {
+        "entities": [],
+        "intent": "no+positive",
+        "text": "nah it's good"
+      },
+      {
+        "entities": [],
+        "intent": "no+positive",
+        "text": "no it is ok"
+      },
+      {
+        "entities": [],
+        "intent": "no+positive",
+        "text": "no it works"
+      },
+      {
+        "entities": [],
+        "intent": "no+positive",
+        "text": "nope it is better"
+      },
+      {
+        "entities": [],
+        "intent": "no+positive",
+        "text": "no worked perfectly?"
+      },
+      {
+        "entities": [],
+        "intent": "no+positive",
+        "text": "nops it is good"
+      },
+      {
+        "entities": [],
+        "intent": "no+positive",
+        "text": "nops it is better"
+      },
+      {
+        "entities": [],
+        "intent": "no+positive",
+        "text": "nops done"
+      },
+      {
+        "entities": [],
+        "intent": "no+positive",
+        "text": "nope now it works"
+      },
+      {
+        "entities": [],
+        "intent": "no+positive",
+        "text": "not done"
+      },
+      {
+        "entities": [],
+        "intent": "no+positive",
+        "text": "nope it works"
+      },
+      {
+        "entities": [],
+        "intent": "no+positive",
+        "text": "nope perfect"
+      },
+      {
+        "entities": [],
+        "intent": "no+positive",
+        "text": "nah it is better"
+      },
+      {
+        "entities": [],
+        "intent": "no+positive",
+        "text": "no it's good"
+      },
+      {
+        "entities": [],
+        "intent": "no+positive",
+        "text": "nope it is good"
+      },
+      {
+        "entities": [],
+        "intent": "no+positive",
+        "text": "no it is in order"
+      },
+      {
+        "entities": [],
+        "intent": "no+positive",
+        "text": "nope this is ok"
+      },
+      {
+        "entities": [],
+        "intent": "no+positive",
+        "text": "n it's better"
+      },
+      {
+        "entities": [],
+        "intent": "no+positive",
+        "text": "nope worked perfectly?"
+      },
+      {
+        "entities": [],
+        "intent": "no+positive",
+        "text": "nope it's better"
+      },
+      {
+        "entities": [],
+        "intent": "no+positive",
+        "text": "n worked perfectly?"
+      },
+      {
+        "entities": [],
+        "intent": "no+positive",
+        "text": "no done"
+      },
+      {
+        "entities": [],
+        "intent": "no+positive",
+        "text": "not it's better"
+      },
+      {
+        "entities": [],
+        "intent": "no+positive",
+        "text": "n it works"
+      },
+      {
+        "entities": [],
+        "intent": "no+positive",
+        "text": "not ok"
+      },
+      {
+        "entities": [],
+        "intent": "no+positive",
+        "text": "no in order"
+      },
+      {
+        "entities": [],
+        "intent": "no+positive",
+        "text": "nope ok"
+      },
+      {
+        "entities": [],
+        "intent": "no+positive",
+        "text": "no perfect"
+      },
+      {
+        "entities": [],
+        "intent": "no+positive",
+        "text": "not it is better"
+      },
+      {
+        "entities": [],
+        "intent": "no+positive",
+        "text": "nops in order"
+      },
+      {
+        "entities": [],
+        "intent": "no+positive",
+        "text": "no ok"
+      },
+      {
+        "entities": [],
+        "intent": "no+positive",
+        "text": "nope in order"
+      },
+      {
+        "entities": [],
+        "intent": "no+positive",
+        "text": "n it is better"
+      },
+      {
+        "entities": [],
+        "intent": "no+positive",
+        "text": "nah ok"
+      },
+      {
+        "entities": [],
+        "intent": "no+positive",
+        "text": "no it/this worked perfectly?"
+      },
+      {
+        "entities": [],
+        "intent": "no+positive",
+        "text": "n this is ok"
+      },
+      {
+        "entities": [],
+        "intent": "no+positive",
+        "text": "not perfect"
+      },
+      {
+        "entities": [],
+        "intent": "no+positive",
+        "text": "nah done"
+      },
+      {
+        "entities": [],
+        "intent": "no+positive",
+        "text": "n perfect"
+      },
+      {
+        "entities": [],
+        "intent": "no+positive",
+        "text": "no is good"
+      },
+      {
+        "entities": [],
+        "intent": "no+positive",
+        "text": "no it is better"
+      },
+      {
+        "entities": [],
+        "intent": "no+positive",
+        "text": "nops it's better"
+      },
+      {
+        "entities": [],
+        "intent": "no+positive",
+        "text": "n done"
+      },
+      {
+        "entities": [],
+        "intent": "no+positive",
+        "text": "nah this is ok"
+      },
+      {
+        "entities": [],
+        "intent": "no+positive",
+        "text": "nope is good"
+      },
+      {
+        "entities": [],
+        "intent": "no+positive",
+        "text": "nah perfect"
+      },
+      {
+        "entities": [],
+        "intent": "no+positive",
+        "text": "not now it works"
+      },
+      {
+        "entities": [],
+        "intent": "no+positive",
+        "text": "nops it works"
+      },
+      {
+        "entities": [],
+        "intent": "no+positive",
+        "text": "nope it is in order"
+      },
+      {
+        "entities": [],
+        "intent": "no+positive",
+        "text": "not it works"
+      },
+      {
+        "entities": [],
+        "intent": "no+positive",
+        "text": "nops ok"
+      },
+      {
+        "entities": [],
+        "intent": "no+positive",
+        "text": "not it is good"
+      },
+      {
+        "entities": [],
+        "intent": "greeting",
+        "text": "hallo"
+      },
+      {
+        "entities": [],
+        "intent": "greeting",
+        "text": "hello"
+      },
+      {
+        "entities": [],
+        "intent": "greeting",
+        "text": "hoi"
+      },
+      {
+        "entities": [],
+        "intent": "greeting",
+        "text": "ahoi"
+      },
+      {
+        "entities": [],
+        "intent": "greeting",
+        "text": "yoo"
+      },
+      {
+        "entities": [],
+        "intent": "greeting",
+        "text": "yo"
+      },
+      {
+        "entities": [],
+        "intent": "greeting",
+        "text": "hey"
+      },
+      {
+        "entities": [],
+        "intent": "greeting",
+        "text": "hey hey"
+      },
+      {
+        "entities": [],
+        "intent": "greeting",
+        "text": "heykes"
+      },
+      {
+        "entities": [],
+        "intent": "greeting",
+        "text": "ahola"
+      },
+      {
+        "entities": [],
+        "intent": "greeting",
+        "text": "aloha"
+      },
+      {
+        "entities": [],
+        "intent": "greeting",
+        "text": "hello"
+      },
+      {
+        "entities": [],
+        "intent": "greeting",
+        "text": "hi"
+      },
+      {
+        "entities": [],
+        "intent": "greeting",
+        "text": "good morning"
+      },
+      {
+        "entities": [],
+        "intent": "greeting",
+        "text": "good afternoon"
+      },
+      {
+        "entities": [],
+        "intent": "greeting",
+        "text": "good evening"
+      },
+      {
+        "entities": [],
+        "intent": "greeting",
+        "text": "good night"
+      },
+      {
+        "entities": [],
+        "intent": "goodbye",
+        "text": "ciao"
+      },
+      {
+        "entities": [],
+        "intent": "goodbye",
+        "text": "cya"
+      },
+      {
+        "entities": [],
+        "intent": "goodbye",
+        "text": "see ya"
+      },
+      {
+        "entities": [],
+        "intent": "goodbye",
+        "text": "see you"
+      },
+      {
+        "entities": [],
+        "intent": "goodbye",
+        "text": "adieu"
+      },
+      {
+        "entities": [],
+        "intent": "goodbye",
+        "text": "bye"
+      },
+      {
+        "entities": [],
+        "intent": "goodbye",
+        "text": "bye bye"
+      },
+      {
+        "entities": [],
+        "intent": "goodbye",
+        "text": "adios"
+      }
+    ],
+    "entity_synonyms": [],
+    "regex_features": []
+  }
+}

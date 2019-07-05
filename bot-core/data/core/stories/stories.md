@@ -20,8 +20,6 @@
     - utter_ask_weather
 * ask_what_is_my_name
     - utter_ask_what_is_my_name
-* ask_what_is
-    - utter_ask_what_is
 * ask_what_is_possible
     - utter_ask_what_is_possible
 * ask_where_from
@@ -57,10 +55,6 @@
     - utter_ask_for_social_network
 * compliment
     - utter_compliment
-* ask_ml
-    - utter_ask_ml
-* ask_mobile
-    - utter_ask_mobile
 * affirm
     - utter_thumbsup
 * bye

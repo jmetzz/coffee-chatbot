@@ -1,0 +1,148 @@
+{
+  "rasa_nlu_data": {
+    "common_examples": [
+      {
+        "entities": [],
+        "intent": "yes+positive",
+        "text": "yes perfect this is ok"
+      },
+      {
+        "entities": [],
+        "intent": "yes+positive",
+        "text": "yeap now it works"
+      },
+      {
+        "entities": [],
+        "intent": "yes+positive",
+        "text": "ya is good"
+      },
+      {
+        "entities": [],
+        "intent": "yes+positive",
+        "text": "sure done"
+      },
+      {
+        "entities": [],
+        "intent": "yes+positive",
+        "text": "yea perfect it's better"
+      },
+      {
+        "entities": [],
+        "intent": "yes+positive",
+        "text": "yes it's good"
+      },
+      {
+        "entities": [],
+        "intent": "yes+positive",
+        "text": "sure in order"
+      },
+      {
+        "entities": [],
+        "intent": "yes+positive",
+        "text": "yes is good"
+      },
+      {
+        "entities": [],
+        "intent": "yes+positive",
+        "text": "sure ok"
+      },
+      {
+        "entities": [],
+        "intent": "yes+positive",
+        "text": "sure great this is ok"
+      },
+      {
+        "entities": [],
+        "intent": "yes+negative",
+        "text": "yeap not done"
+      },
+      {
+        "entities": [],
+        "intent": "yes+negative",
+        "text": "yeap perfecto didn't work"
+      },
+      {
+        "entities": [],
+        "intent": "yes+negative",
+        "text": "ya didn't"
+      },
+      {
+        "entities": [],
+        "intent": "yes+negative",
+        "text": "yes great not done"
+      },
+      {
+        "entities": [],
+        "intent": "yes+negative",
+        "text": "yes okidoki didn't work"
+      },
+      {
+        "entities": [],
+        "intent": "yes+negative",
+        "text": "sure great no success"
+      },
+      {
+        "entities": [],
+        "intent": "yes+negative",
+        "text": "yea great didn't"
+      },
+      {
+        "entities": [],
+        "intent": "yes+negative",
+        "text": "sure did not work"
+      },
+      {
+        "entities": [],
+        "intent": "yes+negative",
+        "text": "yea okido didn't work"
+      },
+      {
+        "entities": [],
+        "intent": "yes+negative",
+        "text": "sure didn't work"
+      },
+      {
+        "entities": [],
+        "intent": "no+positive",
+        "text": "nah now it works"
+      },
+      {
+        "entities": [],
+        "intent": "no+positive",
+        "text": "nops now it works"
+      },
+      {
+        "entities": [],
+        "intent": "no+positive",
+        "text": "nah it is good"
+      },
+      {
+        "entities": [],
+        "intent": "no+positive",
+        "text": "nah it is in order"
+      },
+      {
+        "entities": [],
+        "intent": "no+positive",
+        "text": "nops this is ok"
+      },
+      {
+        "entities": [],
+        "intent": "no+positive",
+        "text": "nope it/this worked perfectly?"
+      },
+      {
+        "entities": [],
+        "intent": "no+positive",
+        "text": "nah worked perfectly?"
+      },
+      {
+        "entities": [],
+        "intent": "no+positive",
+        "text": "nops it is in order"
+      }
+    ],
+    "entity_synonyms": [],
+    "regex_features": []
+  }
+}

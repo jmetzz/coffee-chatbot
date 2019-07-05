@@ -1,8 +1,8 @@
 import logging
 
 import requests
-from rasa_core_sdk.events import SlotSet
-from rasa_core_sdk import Tracker
+from rasa_sdk.events import SlotSet
+from rasa_sdk import Tracker
 
 from typing import List, Tuple, Sequence
 

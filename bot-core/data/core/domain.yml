@@ -82,6 +82,12 @@ actions:
 - utter_ask_culture
 - utter_ask_portfolio
 - utter_ask_feedback_message
+- utter_cheer_up
+- utter_did_that_help
+- utter_happy
+- utter_goodbye
+- utter_ask_location
+- utter_ask_builder
 entities:
 - email
 - entity

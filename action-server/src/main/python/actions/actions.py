@@ -2,18 +2,15 @@ import logging
 
 from rasa_sdk import Action, Tracker
 from rasa_sdk.executor import CollectingDispatcher
-from typing import Text, Dict, Any, List
-# from rasa_sdk.forms import FormAction
-
 from rasa_sdk.forms import FormAction
+from rasa_sdk.events import SlotSet
+from rasa_sdk.forms import FormAction, REQUESTED_SLOT
+
+from typing import Text, Dict, Any, List
 
 from fuzzywuzzy import process as proc
 from fuzzywuzzy.fuzz import token_set_ratio
-from rasa_core_sdk.events import SlotSet
-from rasa_core_sdk.forms import FormAction, REQUESTED_SLOT
 
-
-# from rasa_core_sdk.forms import FormAction, REQUESTED_SLOT
 from rasa_sdk.events import (
     SlotSet,
     UserUtteranceReverted,
@@ -113,27 +110,27 @@ class ActionChitchat(Action):
 
         # retrieve the correct chitchat utterance dependent on the intent
         if intent in [
-                      "ask_how_to_brew",
-                      "ask_how_doing",
-                      "ask_how_old",
-                      "ask_is_bot",
-                      "ask_languages_bot",
-                      "ask_espresso_bar",
-                      "ask_time",
-                      "ask_weather",
-                      "ask_whatis",
-                      "ask_what_is_my_name",
-                      "ask_what_is_possible",
-                      "ask_where_from",
-                      "ask_who_am_i",
-                      "ask_who_is_it",
-                      "handle_insult",
-                      "ask_for_the_blog",
-                      "compliment",
-                      "ask_location",
-                      "ask_for_social_network",
-                      "ask_culture",
-                      ]:
+            "ask_how_to_brew",
+            "ask_how_doing",
+            "ask_how_old",
+            "ask_is_bot",
+            "ask_languages_bot",
+            "ask_espresso_bar",
+            "ask_time",
+            "ask_weather",
+            "ask_whatis",
+            "ask_what_is_my_name",
+            "ask_what_is_possible",
+            "ask_where_from",
+            "ask_who_am_i",
+            "ask_who_is_it",
+            "handle_insult",
+            "ask_for_the_blog",
+            "compliment",
+            "ask_location",
+            "ask_for_social_network",
+            "ask_culture",
+        ]:
             dispatcher.utter_template("utter_" + intent, tracker, **tracker.slots)
         return []
 
@@ -161,7 +158,10 @@ class ActionComposedUtter(Action):
     def __str__(self):
         return "UtterAction('{}')".format(self.name())
 
-
+ActionScheduleAppointment = type("ActionScheduleAppointment",
+                             (ActionComposedUtter,),
+                             {"utter_list": ["utter_schedule_appointment", "utter_appointment_page"],
+                              "action_name": "action_schedule_appointment"})
 
 
 class ActionSimpleTextForm(FormAction):
@@ -238,3 +238,38 @@ class ActionSimpleTextForm(FormAction):
 
     def submit(self, dispatcher, tracker, domain):
         return [SlotSet(self._counter_slot, 0)]
+
+
+VERSION_FORM_ALLOWED_ANSWERS = {"extra": ["extra"],
+                                "bestaande": ["bestaande", "vervangen"]}
+
+APP_FORM_ALLOWED_ANSWERS = {'mobile': ["mobile"],
+                            'touch': ["touch"],
+                            'sign': ["sign"],
+                            'itsme': ["itsme"]}
+
+CODE_FORM_ALLOWED_ANSWERS = {'app code': ["app code", "vijfcijferige code", "vijfcijferige", "app"],
+                             'pin': ["pin", "viercijferige code", "kaart", "kaartcode", "kaartpin"]}
+
+REFUND_TYPE_FORM_ALLOWED_ANSWERS = {"persoonlijk": ["persoonlijk", "eigen", "zelf"],
+                                    "shop": ["shop", "winkel", "handelaar"],
+                                    "webshop": ["webshop", "internet", "online"]}
+
+AppForm = type("AppForm",
+               (ActionSimpleTextForm,),
+               {"inform_slot": "app",
+                "action_name": "app_form",
+                "allowed_answers": APP_FORM_ALLOWED_ANSWERS})
+
+CodeForm = type("CodeForm",
+                (ActionSimpleTextForm,),
+                {"inform_slot": "identification",
+                 "action_name": "code_form",
+                 "allowed_answers": CODE_FORM_ALLOWED_ANSWERS})
+
+RefundTypeForm = type("RefundTypeForm",
+                      (ActionSimpleTextForm,),
+                      {"inform_slot": "channel-non-kbc",
+                       "action_name": "refund_type_form",
+                       "allowed_answers": REFUND_TYPE_FORM_ALLOWED_ANSWERS,
+                       "utter_ask": "utter_refund_type"})

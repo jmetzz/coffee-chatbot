@@ -1,0 +1,243 @@
+## generated_story_original_stories_0_story0
+* greet
+  - utter_greet
+* mood_great
+  - utter_happy
+## generated_story_original_stories_1_story0
+* greet
+  - utter_greet
+* mood_unhappy
+  - utter_cheer_up
+  - utter_did_that_help
+* mood_deny
+  - utter_goodbye
+
+## generated_story_original_stories_1_story1
+* greet
+  - utter_greet
+* mood_unhappy
+  - utter_cheer_up
+  - utter_did_that_help
+* mood_affirm
+  - utter_happy
+## generated_story_original_stories_2_story0
+* goodbye
+  - utter_goodbye
+## generated_story_full_conversations_0_story0
+* greet
+  - utter_greet
+* mood_great
+  - utter_happy
+* greet
+  - utter_greet
+* mood_unhappy
+  - utter_cheer_up
+  - utter_did_that_help
+* mood_deny
+  - utter_goodbye
+* goodbye
+  - utter_goodbye
+
+## generated_story_full_conversations_0_story1
+* greet
+  - utter_greet
+* mood_great
+  - utter_happy
+* greet
+  - utter_greet
+* mood_unhappy
+  - utter_cheer_up
+  - utter_did_that_help
+* mood_affirm
+  - utter_happy
+* goodbye
+  - utter_goodbye
+## generated_story_long_conversations_0_story0
+* greet
+  - utter_greet
+* mood_great
+  - utter_happy
+* greet
+  - utter_greet
+* mood_unhappy
+  - utter_cheer_up
+  - utter_did_that_help
+* mood_deny
+  - utter_goodbye
+* greet
+  - utter_greet
+* mood_unhappy
+  - utter_cheer_up
+  - utter_did_that_help
+* mood_deny
+  - utter_goodbye
+
+## generated_story_long_conversations_0_story1
+* greet
+  - utter_greet
+* mood_great
+  - utter_happy
+* greet
+  - utter_greet
+* mood_unhappy
+  - utter_cheer_up
+  - utter_did_that_help
+* mood_affirm
+  - utter_happy
+* greet
+  - utter_greet
+* mood_unhappy
+  - utter_cheer_up
+  - utter_did_that_help
+* mood_deny
+  - utter_goodbye
+## generated_story_very_long_conversations_0_story0
+* greet
+  - utter_greet
+* mood_great
+  - utter_happy
+* greet
+  - utter_greet
+* mood_unhappy
+  - utter_cheer_up
+  - utter_did_that_help
+* mood_affirm
+  - utter_happy
+* greet
+  - utter_greet
+* mood_unhappy
+  - utter_cheer_up
+  - utter_did_that_help
+* mood_deny
+  - utter_goodbye
+* greet
+  - utter_greet
+* mood_unhappy
+  - utter_cheer_up
+  - utter_did_that_help
+* mood_deny
+  - utter_goodbye
+
+## generated_story_very_long_conversations_0_story1
+* greet
+  - utter_greet
+* mood_great
+  - utter_happy
+* greet
+  - utter_greet
+* mood_unhappy
+  - utter_cheer_up
+  - utter_did_that_help
+* mood_affirm
+  - utter_happy
+* greet
+  - utter_greet
+* mood_unhappy
+  - utter_cheer_up
+  - utter_did_that_help
+* mood_affirm
+  - utter_happy
+* greet
+  - utter_greet
+* mood_unhappy
+  - utter_cheer_up
+  - utter_did_that_help
+* mood_deny
+  - utter_goodbye
+
+## generated_story_very_long_conversations_0_story2
+* greet
+  - utter_greet
+* mood_great
+  - utter_happy
+* greet
+  - utter_greet
+* mood_unhappy
+  - utter_cheer_up
+  - utter_did_that_help
+* mood_deny
+  - utter_goodbye
+* greet
+  - utter_greet
+* mood_unhappy
+  - utter_cheer_up
+  - utter_did_that_help
+* mood_deny
+  - utter_goodbye
+* greet
+  - utter_greet
+* mood_unhappy
+  - utter_cheer_up
+  - utter_did_that_help
+* mood_affirm
+  - utter_happy
+
+## generated_story_very_long_conversations_0_story3
+* greet
+  - utter_greet
+* mood_great
+  - utter_happy
+* greet
+  - utter_greet
+* mood_unhappy
+  - utter_cheer_up
+  - utter_did_that_help
+* mood_deny
+  - utter_goodbye
+* greet
+  - utter_greet
+* mood_unhappy
+  - utter_cheer_up
+  - utter_did_that_help
+* mood_deny
+  - utter_goodbye
+* greet
+  - utter_greet
+* mood_unhappy
+  - utter_cheer_up
+  - utter_did_that_help
+* mood_deny
+  - utter_goodbye
+## generated_story_very_long_conversations_1_story0
+* greet
+  - utter_greet
+* mood_great
+  - utter_happy
+* greet
+  - utter_greet
+* mood_unhappy
+  - utter_cheer_up
+  - utter_did_that_help
+* mood_deny
+  - utter_goodbye
+* greet
+  - utter_greet
+* mood_unhappy
+  - utter_cheer_up
+  - utter_did_that_help
+* mood_deny
+  - utter_goodbye
+* goodbye
+  - utter_goodbye
+
+## generated_story_very_long_conversations_1_story1
+* greet
+  - utter_greet
+* mood_great
+  - utter_happy
+* greet
+  - utter_greet
+* mood_unhappy
+  - utter_cheer_up
+  - utter_did_that_help
+* mood_affirm
+  - utter_happy
+* greet
+  - utter_greet
+* mood_unhappy
+  - utter_cheer_up
+  - utter_did_that_help
+* mood_affirm
+  - utter_happy
+* goodbye
+  - utter_goodbye

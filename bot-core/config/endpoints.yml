@@ -11,15 +11,17 @@
 # https://rasa.com/docs/rasa/core/actions/#custom-actions/
 
 action_endpoint:
-  url: "http://142.93.108.43:5055/webhook"
+  url: "http://localhost:5055/webhook"
+#  url: "http://142.93.108.43:5055/webhook"
 
-tracker_store:
-    type: mongod
-    url: mongodb://142.93.108.43:27017
-    db: rasa
-    username: USER
-    password: PASSWORD
-    auth_source: admin
+#tracker_store:
+#    type: mongod
+##    url: mongodb://142.93.108.43:27017
+#    url: mongodb://localhost:27017
+#    db: rasa
+#    username: USER
+#    password: PASSWORD
+#    auth_source: admin
 
 # Tracker store which is used to store the conversations.
 # By default the conversations are stored in memory.

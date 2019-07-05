@@ -1,0 +1,15 @@
+name: coffe-bot
+dependencies:
+  - python=3.7
+  - pip
+  - coverage
+  - flake8
+  - pycodestyle
+  - pyflakes
+  - tblib
+  - pypandoc
+  - pybuilder
+  - pip:
+    - unittest-xml-reporting
+    - mockito
+    - parameterized

@@ -42,13 +42,4 @@
     - form{"name": null}
     - utter_anything_else
 
-## just what is JA, don't continue
-* greet
-    - utter_greet
-* ask_what_is
-    - utter_ask_what_is
-* human_handoff
-    - utter_contact_email
-* deny
-    - utter_thumbsup
 

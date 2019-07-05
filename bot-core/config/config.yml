@@ -10,7 +10,7 @@ pipeline:
   OOV_token: oov
   token_pattern: (?u)\b\w+\b
 - name: EmbeddingIntentClassifier
-  epochs: 50
+  epochs: 2
 - name: DucklingHTTPExtractor
   url: http://142.93.108.43:8000
   dimensions:
@@ -35,7 +35,7 @@ policies:
       state_featurizer:
         - name: BinarySingleStateFeaturizer
     rnn_size: 42
-    epochs: 50
+    epochs: 2
   - name: "FallbackPolicy"
     nlu_threshold: 0.75
     core_threshold: 0.3

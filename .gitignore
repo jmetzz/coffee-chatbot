@@ -120,3 +120,5 @@ __pycache__/
 .env
 .coverage
 target/
+
+mongo/
