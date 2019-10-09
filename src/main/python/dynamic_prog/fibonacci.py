@@ -19,15 +19,43 @@ def fib_cached(n: int):
         return value
 
 def fib_with_memoization(n: int):
-    memo = [0] * (n + 1)
+
+    memo = [0] * (n + 2) # create a least 2 slots
     memo[1] = 1    
-    for i in range(2, n+1):
+    for i in range(2, n + 1):
         memo[i] = memo[i - 1] + memo[i - 2]
     return memo[n]
 
+def fib_memoization_small_space(n: int):
+    """Calculates the fibonacci number for n.
+    
+    Since we only need the 2 previous elements to calculate the fib 
+    number for a particular i, as in the equation
+
+        fib(i) =  fib(i - 1) + fib(i - 2)
+    
+    this method does not store all the elements in the sequence, 
+    but rather keeps only the i-1 and i-2 elements in memory
+    so we can derive the value for the element i.
+    
+    """
+    # start with fib(0) and fib(1) as 0 and 1.
+    # position 0 represents even values of i, 
+    # while position 1 represents the odd values of i
+    memo = [0, 1]
+
+    # from 2 to n, calculate the i-esim fib number
+    # and asign to i-1 or i-2 according to the valu of i
+    for i in range(2, n + 1):
+        # fib(i) =  fib(i - 1) + fib(i - 2)
+        memo[i % 2] = memo[1] + memo[0]
+    return memo[n % 2]
+
+
+
 if __name__ == "__main__":
-    n = 20 
-    # 167960
-    # print(fib_recursion(n))
-    # print(fib_cached(n))
+    n = 40
+    print(fib_recursion(n))
+    print(fib_cached(n))
     print(fib_with_memoization(n))
+    print(fib_memoization_small_space(n))
