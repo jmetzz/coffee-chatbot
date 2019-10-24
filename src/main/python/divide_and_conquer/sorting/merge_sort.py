@@ -64,7 +64,6 @@ class TopDownMergeSort2:
     def _sort(cls, elements, lo, hi, buffer):
         if hi <= lo:
             return
-
         mid = lo + (hi - lo) // 2
         cls._sort(elements, lo, mid, buffer)
         cls._sort(elements, mid + 1, hi, buffer)
@@ -219,20 +218,20 @@ class BottomUpMergeSort:
                 i += 1
 
 if __name__ == "__main__":
-    # a = [2, 4, 1, 8, 5, 0, 9, 2]
-    # print(TopDownMergeSort.sort(a))
+    a = [2, 4, 1, 8, 5, 0, 9, 2]
+    print(TopDownMergeSort.sort(a))
 
-    # b = [2, 4, 1, 8, 5, 0, 9, 2]
-    # TopDownMergeSort2.sort(b)
-    # print(b)
+    b = [2, 4, 1, 8, 5, 0, 9, 2]
+    TopDownMergeSort2.sort(b)
+    print(b)
 
-    # c = [2, 4, 1, 8, 5, 0, 9, 2]
-    # TopDownMergeSort3.sort(c)
-    # print(c)
+    c = [2, 4, 1, 8, 5, 0, 9, 2]
+    TopDownMergeSort3.sort(c)
+    print(c)
 
-    # d = [9, 2, 0, 2, 1, 4, 5, 8, 0]
-    # TopDownMergeSort4.sort(d)
-    # print(d)
+    d = [9, 2, 0, 2, 1, 4, 5, 8, 0]
+    TopDownMergeSort4.sort(d)
+    print(d)
 
     e = [9, 2, 0, 2, 1, 4, 5, 8, 0, 12]
     BottomUpMergeSort.sort(e)
