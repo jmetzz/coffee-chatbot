@@ -1,10 +1,9 @@
 import random
-# from ...basic_algs.insertion_sort import InsertionSort
 
 def swap(a, i, j):
     """Swap two elements in a given array.
-    
-    The operation is performed in place, 
+
+    The operation is performed in place,
     exchanging the elements in position i and j.
 
     Args:
@@ -14,12 +13,13 @@ def swap(a, i, j):
     temp = a[j]
     a[j] = a[i]
     a[i] = temp
-    
+
+
 class QSortRec:
     @classmethod
-    def sort(cls, elements):        
+    def sort(cls, elements):
         """Sorts the given array of elements in place.
-        
+
         This method is a recursive implementation of the
         Quicksort algorithm which sorts the array in place.
 
@@ -31,7 +31,7 @@ class QSortRec:
     @classmethod
     def _qsort(cls, elements, lo, hi):
         """Sorts the given array of elements.
-        
+
         This method is a recursive implementation of the
         Quicksort algorithm which sorts the array in place.
 
@@ -50,7 +50,7 @@ class QSortRec:
     @classmethod
     def _partition(cls, elements, lo, hi):
         """Partition the array of elements in a two-way fashion.
-        
+
         Uses always the first element as the pivot.
         The elements in the array reorganized according
         to the following rule:
@@ -68,7 +68,7 @@ class QSortRec:
         i = lo + 1
         for j in range(i, hi + 1):
             if elements[j] < pivot:
-                swap(elements, i, j)        
+                swap(elements, i, j)
                 i += 1
         swap(elements, lo, i - 1)
         return i - 1
@@ -82,7 +82,7 @@ class QSortRec2(QSortRec):
     @classmethod
     def _partition(cls, elements, lo, hi):
         """Partition the array of elements in a two-way fashion.
-        
+
         Uses always the first element as the pivot.
         The elements in the array reorganized according
         to the following rule:
@@ -115,26 +115,27 @@ class QSortRecRandomized(QSortRec2):
     @classmethod
     def sort(cls, elements):
         """Sorts the given array of elements in place.
-        
+
         This method is a recursive implementation of the
         Quicksort algorithm which sorts the array in place.
 
-        In order to eliminate the performance dependency 
-        on input and to guarantee O(N log N) running time, 
+        In order to eliminate the performance dependency
+        on input and to guarantee O(N log N) running time,
         the elements are shuffled before performing the sorting.
 
         Args:
             elements: the subarray of elements to partition
         """
         from random import shuffle
-        shuffle(elements) 
+        shuffle(elements)
         cls._qsort(elements, 0, len(elements) - 1)
+
 
 class QSortRecThreeWayPartition(QSortRec2):
     @classmethod
     def _partition(cls, elements, lo, hi):
         """Partition the array of elements using three-way strategy.
-        
+
         The elements in the array reorganized according
         to the following rule:
             elements = [a_i <=  pivot, pivot, a_i > pivot]
@@ -143,9 +144,9 @@ class QSortRecThreeWayPartition(QSortRec2):
         This implementation is an improvement on the two-way partitioning
         method for cases when the data contains many duplicate keys.
         However, it uses many more exchanges than the stadard 2-way
-        partitioning method for the common case when the numver of 
+        partitioning method for the common case when the numver of
         duplicate keys in the array is not high.
-        
+
         We keep a few 'pointers' to control the partitioning process:
             lo: lower boundary index
             hi: higher boundary index
@@ -167,13 +168,13 @@ class QSortRecThreeWayPartition(QSortRec2):
             [lt + 1..i]: equals pivot
             [i + 1..gt - 1]: unseen elements
             [gt + 1..hi]: greater than pivot
-        
+
         After partitioning:
         [ < pivot       | = pivot |    > pivot ]
         lo                                   hi
                       lt          gt
                          i
-        
+
         Args:
             elements: the subarray of elements to partition
             lo: the lower bounday index of the subarray
@@ -198,17 +199,18 @@ class QSortRecThreeWayPartition(QSortRec2):
                 i += 1
         return lt
 
+
 class QSortRecThreeWayPartitionAlternative(QSortRec2):
     @classmethod
     def _partition(cls, elements, lo, hi):
         """Partition the array of elements using three-way strategy
-        
+
         This implementation is an improvement on the two-way partitioning
         method for cases when the data contains many duplicate keys.
 
         This is a different implementation of the 3-way partitioning method.
         The abstraction is partition the array such that:
-        
+
         The pivot is always the first element in the subarray.
 
             [ pivot | <= pivot | > pivot |     unseen     ]
@@ -221,8 +223,8 @@ class QSortRecThreeWayPartitionAlternative(QSortRec2):
                              lte        gt
 
         This way we progress lte while decrementing gt until they cross.
-        At the end, we need to swap the bigger 'less than pivot' element 
-        with the pivot to put the pivot in the right place. 
+        At the end, we need to swap the bigger 'less than pivot' element
+        with the pivot to put the pivot in the right place.
         Such element is at the index lte - 1.
 
         Args:
@@ -238,7 +240,7 @@ class QSortRecThreeWayPartitionAlternative(QSortRec2):
             if elements[gt] <= pivot:
                 swap(elements, lte + 1, gt)
                 lte += 1
-                
+
         swap(elements, lte, lo)
         return lte
 
@@ -247,13 +249,13 @@ class QSortRecMedianOfThreePartition(QSortRec):
     @classmethod
     def choose_pivot(cls, elements, lo, hi):
         """Chosse the pivot as a median of 3.
-        
+
             This method randomly selects 3 elements
-            from the subarray as the pivot options. 
-            Then finds the median the element among 
-            the 3 chosen, and then swaps it with the 
+            from the subarray as the pivot options.
+            Then finds the median the element among
+            the 3 chosen, and then swaps it with the
             element at index lo.
-            This allows the usage of the base method 
+            This allows the usage of the base method
             for partitioning and sorting.
 
         Args:
@@ -273,18 +275,19 @@ class QSortRecMedianOfThreePartition(QSortRec):
         if values[0] > values[0]:
             swap(values, 0, 1)
             swap(indexes, 0, 1)
-        
+
         if values[1] > values[2]:
             swap(values, 1, 2)
             swap(indexes, 1, 2)
-        
+
         swap(elements, lo, indexes[1])
         return elements[lo], lo
+
 
 class QSortRecRandomizedCutoff(QSortRecRandomized):
     @classmethod
     def _qsort(cls, elements, lo, hi):
-        # from ...basic_algs.insertion_sort import InsertionSort
+        from basic_algs.sorting.insertion_sort import InsertionSort
         n = hi - lo + 1
         if n <= 1:
             InsertionSort._sort(elements, lo, hi)
@@ -299,17 +302,19 @@ class QSortRecRandomPivot(QSortRec):
     def _partition(cls, a, start, end):
         raise NotImplementedError("This method is not implemented yet.")
 
-        pivot = random.randint(0,len(a) - 1)
+        pivot = random.randint(0, len(a) - 1)
         swap(a, start, pivot)
         i = start + 1
         for j in range(i, end + 1):
             if a[j] < a[start]:
-                swap(a, i, j)        
+                swap(a, i, j)
                 i += 1
         swap(a, start, i - 1)
         return i - 1
 
-if __name__ == "__main__": 
+
+if __name__ == "__main__":
+
     # a =[2,4,1,8,5,0,]
     # QSortRec.sort(a)
     # print(a)
@@ -321,7 +326,7 @@ if __name__ == "__main__":
     # a =[2,4,1,8,5,0,]
     # QSortRecRandomized.sort(a)
     # print(a)
-    
+
     # a = [2, 4, 1, 8, 5, 0, 3, 4, 5, 6, 7, 2, 1, 6]
     # QSortRecThreeWayPartition.sort(a)
     # print(a)

@@ -1,3 +1,37 @@
+# Run the examples
+
+If you are using VS Code, make sure to add the correct configuration.
+It is important the set the `PYTHONPATH` variable correctly in order to 
+get the `imports` working properly.
+Therefor, replace `/path/to/` part of the path with the correct path 
+where the code base is located.
+
+```json
+    "configurations": [
+        {
+            "name": "Python: Current File",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "env": {
+                "PYTHONPATH": "/path/to/algorithm-challenges-lab/python/src:/path/to/algorithm-challenges-lab/python/resources"
+            },
+            "console": "integratedTerminal"
+        }
+    ]
+
+```
+
+Alternativelly, you can set the path inside the running script. For example:
+
+```python
+if __name__ == "__main__":
+    import sys; print('Python %s on %s' % (sys.version, sys.platform))
+    sys.path.extend(['/path/to/algorithm-challenges-lab'])
+    // ...
+```
+
+
 # Divide and conquer algorithms and problems
 
 | Algorithm  | Status |

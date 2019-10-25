@@ -126,22 +126,11 @@ def multiply_dc(X, Y, method = strassen_dot):
 
 if __name__ == "__main__":
 
-    # a = np.array([
-    #     [1,2,3],
-    #     [4,5,6],
-    #     [7,8,9],
-    # ])
-    # b = np.array([
-    #     [7,8,9],
-    #     [4,5,6],
-    #     [1,2,3],
-    # ])
     n = 100
     a = np.random.randint(9, size = (n, n))
     b = np.random.randint(9, size = (n, n))
     info = {}
 
-    print("Expected:")
     start = timer()
     expected = a.dot(b)
     end = timer()

@@ -1,3 +1,5 @@
+import numpy as np
+
 def edit_dist(s, z):
     """Calculates the edit distance between two given sequences.
     

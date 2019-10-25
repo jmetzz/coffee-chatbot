@@ -1,6 +1,3 @@
-import numpy as np
-
-
 class TopDownMergeSort:
     """Merge sort algorithm.
     
@@ -104,6 +101,7 @@ class TopDownMergeSort3(TopDownMergeSort2):
     i.e., whenever a[mid] <= a[mid + 1].
     This produces a linear running for sorted subarrays.
     """
+
     @classmethod
     def _sort(cls, elements, lo, hi, buffer):
         if hi <= lo:
@@ -112,7 +110,7 @@ class TopDownMergeSort3(TopDownMergeSort2):
         mid = lo + (hi - lo) // 2
         cls._sort(elements, lo, mid, buffer)
         cls._sort(elements, mid + 1, hi, buffer)
-        
+
         if elements[mid] > elements[mid + 1]:
             cls._merge(elements, lo, mid, hi, buffer)
 
@@ -124,6 +122,7 @@ class TopDownMergeSort4:
     from the source array to the auxiliary array during the merge step.
     It still uses the auxiliary array space, though.
     """
+
     @classmethod
     def sort(cls, elements):
         buffer = [e for e in elements]
@@ -159,7 +158,7 @@ class TopDownMergeSort4:
         """
 
         if src[mid] <= src[mid + 1]:
-            return 
+            return
 
         i = lo
         j = mid + 1
@@ -172,6 +171,7 @@ class TopDownMergeSort4:
                 dest[k] = src[j]
                 j += 1
 
+
 class BottomUpMergeSort:
     @classmethod
     def sort(cls, elements):
@@ -180,16 +180,16 @@ class BottomUpMergeSort:
 
         size = 1
         while size < n:
-            for lo in range(0, n - size, size*2):
+            for lo in range(0, n - size, size * 2):
                 # bear in mind the last subarray might have less
                 # than size elements in case n is not an even
                 # multiple of size. Thus, we calculate accordingly
-                hi = min(lo + size*2 - 1, n - 1)
+                hi = min(lo + size * 2 - 1, n - 1)
                 # the split point mid can be calculated as
                 # mid = lo + size - 1
                 # However, for the sake of clarity, let's calculate 
                 # it as a function of lo and hi, as in the other methods.
-                mid = lo + (lo + hi)//2
+                mid = lo + (lo + hi) // 2
 
                 # Now we merge the subarrays
                 cls._merge(elements, lo, mid, hi, buffer)
@@ -216,6 +216,7 @@ class BottomUpMergeSort:
             else:
                 a[k] = buffer[i]
                 i += 1
+
 
 if __name__ == "__main__":
     a = [2, 4, 1, 8, 5, 0, 9, 2]
